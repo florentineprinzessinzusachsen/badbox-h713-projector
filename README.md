@@ -848,5 +848,19 @@ Read-only reachability check from an independent host (no proxy protocol/payload
 
 Developer options:
 
-1. `Deviceversion.onKeyDown` (Settings' "Device info" screen) watches for a Konami style code, Up Up Down Down Left Left Right Right Center Center, which opens the real developer options.
-2. Up Down Left Right Center tries to launch `com.konka.readmain.MainActivity`, an unrelated OEM factory-test app that isn't actually installed on this unit.
+1. `Deviceversion.onKeyDown` (Settings' "Device info" screen) watches for a Konami style code, Up Up Down Down Left Left Right Right Center Center, which tries to open developer options. For me this didn't work.
+2. Up Down Left Right Center tries to launch `com.konka.readmain.MainActivity`, an unrelated OEM factory-test app that isn't actually installed on this unit. Same, didn't work.
+
+```
+adb shell am start -n com.ashd.settings/com.rk_itvui.settings.deviceversion.Deviceversion
+adb shell input keyevent 19
+adb shell input keyevent 19
+adb shell input keyevent 20
+adb shell input keyevent 20
+adb shell input keyevent 21
+adb shell input keyevent 21
+adb shell input keyevent 22
+adb shell input keyevent 22
+adb shell input keyevent 23
+adb shell input keyevent 23
+```
