@@ -5,3 +5,5 @@ sunxi-tools/
 sysapks/
 .DS_Store
 .claude/
+analysis/tools/skn0054_udp_sweep_serial_results.json
+analysis/tools/skn0054_udp_sweep_serial.log
