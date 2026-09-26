@@ -278,7 +278,7 @@ Network indicators (domains, URLs, IPs) are in [section 11](#11-consolidated-hos
 | `com.google.adtest` (real name `com.fotas.wanapp`, "com.speed") | `/data/app`                                             | second loader                                                    |
 | `com.cloudmedia.testapk`                                        | `/system/app`                                           | OEM factory test app, removed alongside the dropper in section 8 |
 | `com.disney.disneyplus`                                         | `/data/app`                                             | cover app installed by the dropper                               |
-| `com.android.nfx`                                               | `/system/priv-app/NFXAccessibility`                     | kept — believed harmless (Netflix remote-control helper)         |
+| `com.android.nfx`                                               | `/system/priv-app/NFXAccessibility`                     | kept, harmless (Netflix remote-control helper)         |
 
 ### 6.2.Binaries
 
@@ -546,7 +546,7 @@ POST http://wjtysj.ishanghd.com/hx_kt.php?act=project&do=getPackageInfo
      &update_type=1|2        # 1 auto check, 2 forced ("check for update" button)
 ```
 
-via Apache `HttpPost` with empty form body. Everything is in the query string, so GET and POST are equivalent and no signature/token. Replayed live (2026‑09‑26) with this unit's real values: `{"code":200,"data":[]}` every time — the backend is alive and validates params correctly (drop any required one → `{"code":1001,...,"message":"请求参数缺失"}`), it simply has no package on file for this productid, at any version tried.
+via Apache `HttpPost` with empty form body. Everything is in the query string, so GET and POST are equivalent and no signature/token. Replayed live (2026‑09‑26): `{"code":200,"data":[]}`, seems to have no package for this productid, at any version tried.
 
 ### 9.2 Dropper
 
@@ -711,7 +711,7 @@ ac.b()
       (state 1: fetch "domain_info", cached 24h)
 ac.c()
   ->  https://seed-info.oss-ap-southeast-1.aliyuncs.com/favorite.ico
-      (state 3: OSS bootstrap; body is a plain URL — currently "http://dporder.midrouterx.com/api/dispatchByOss")
+      (state 3: OSS bootstrap; body is a plain URL: "http://dporder.midrouterx.com/api/dispatchByOss")
 ac.d()
   ->  43.173.127.241:9090
       (state 5: "ip_tcp_info" bootstrap)
@@ -766,7 +766,7 @@ Two services are started:
 - `com.google.android.AdService`
 - `com.google.android.BakService`
 
-It also reflectively probes for and initializes an optional `com.fotas.wanapp.ChannelSdkInit` class if present — a per-distribution-channel plugin hook we don't have a sample of. App id strings observed: `"wanapp"`, `"WAN_AISHANG_001"`.
+Reflectively probes for and initializes an optional `com.fotas.wanapp.ChannelSdkInit` class if present. App id strings: `"wanapp"`, `"WAN_AISHANG_001"`.
 
 ### 9.9. Live status snapshot (2026-09-26)
 
@@ -778,18 +778,16 @@ Read-only reachability check from an independent host (no proxy protocol/payload
 | `api.kookjar.com`                                                                                   | resolves (Cloudflare, 172.67.159.65), HTTP 204                               | alive                                                                         |
 | `152.32.240.141` (SKN0041 debug fallback)                                                           | TCP/80 timeout                                                               | not reachable; debug-only path anyway, production uses `api.kookjar.com`      |
 | `dporder.midrouterx.com`                                                                            | resolves direct (43.174.196.241, Tencent Cloud), HTTP 200 on `/api/dispatch` | **alive**                                                                     |
-| `seed-info.oss-ap-southeast-1.aliyuncs.com`                                                         | resolves (47.79.49.170, Alibaba Cloud SG), HTTP 200, serves `favorite.ico`   | **alive** — abuse contact: Alibaba Cloud                                      |
+| `seed-info.oss-ap-southeast-1.aliyuncs.com`                                                         | resolves (47.79.49.170, Alibaba Cloud SG), HTTP 200, serves `favorite.ico`   | **alive**                                      |
 | `hgsdkszns.com`                                                                                     | resolves (Cloudflare)                                                        | DNS alive; plain HTTPS probe reset (unused branch in current build, see 10.5) |
-| `43.173.127.241:9090`                                                                               | **raw TCP connect succeeds**                                                 | **alive and listening right now**                                             |
+| `43.173.127.241:9090`                                                                               | **raw TCP connect succeeds**                                                 | **alive, listening right now**                                             |
 | `api.eviceh.cc:16000`                                                                               | resolves (152.53.83.204)                                                     | DNS alive, TCP/16000 refused at check time (gateway not currently listening)  |
 | `dw4y.mmavlino.com` / `zx8c.llvyomi.net` / `zxn5.p2f7mjhv.eu.cc` / `45.43.57.99` / `165.154.135.52` | not re-checked this pass                                                     | see section 11                                                                |
 | `api.pechlo.cc`, `api.logobi.cc`                                                                    | resolve (Cloudflare), HTTP 404 on `/`                                        | alive                                                                         |
 | `random.vivosoc.cc`                                                                                 | **no DNS record**                                                            | appears dead/expired                                                          |
 | `codedevapp.com`                                                                                    | resolves (5.161.41.216, Hetzner)                                             | alive; `/api/v1/device/dau` is POST-only so a bare GET aborts                 |
 
-Several origins sit behind Cloudflare — abuse reports for those should go to Cloudflare (who can see the real origin) in addition to the registrar. `dporder.midrouterx.com`, `seed-info...aliyuncs.com`, and `43.173.127.241` are un-proxied and point straight at the hosting provider (Tencent Cloud / Alibaba Cloud respectively).
-
-## 10. Consolidated URLs
+## 10. URLs
 
 | Host / URL                                                                                                                  | Component                                 | Role                                                                                                                           |
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
