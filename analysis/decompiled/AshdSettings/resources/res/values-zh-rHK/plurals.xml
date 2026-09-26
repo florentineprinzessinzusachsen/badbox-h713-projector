@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">密碼中至少應包含 1 個字母</item>
+        <item quantity="other">密碼中至少應包含 %d 個字母</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">密碼中至少應包含 1 個小寫字母</item>
+        <item quantity="other">密碼中至少應包含 %d 個小寫字母</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">密碼中至少應包含 1 個非字母字符</item>
+        <item quantity="other">密碼中至少應包含 %d 個非字母字符</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">密碼中至少應包含 1 個數字</item>
+        <item quantity="other">密碼中至少應包含 %d 個數字</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">密碼中至少應包含 1 個特殊符號</item>
+        <item quantity="other">密碼中至少應包含 %d 個特殊符號</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">密碼中至少應包含 1 個大寫字母</item>
+        <item quantity="other">密碼中至少應包含 %d 個大寫字母</item>
+    </plurals>
+</resources>

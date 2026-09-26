@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/viewpager_item_textsize"
+    android:ellipsize="marquee"
+    android:gravity="bottom|center_horizontal"
+    android:id="@+id/tv_info"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="@dimen/viewpager_item_h"
+    android:layout_height="@dimen/viewpager_item_w"
+    android:singleLine="true"
+    android:marqueeRepeatLimit="marquee_forever"/>

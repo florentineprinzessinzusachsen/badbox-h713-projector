@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_list_pad">10dp</dimen>
+    <dimen name="viewpager_bottom">10px</dimen>
+    <dimen name="viewpager_h">550px</dimen>
+    <dimen name="viewpager_icon_h">50px</dimen>
+    <dimen name="viewpager_icon_textsize">20px</dimen>
+    <dimen name="viewpager_item_h">207px</dimen>
+    <dimen name="viewpager_item_icon">75px</dimen>
+    <dimen name="viewpager_item_icon_left">2px</dimen>
+    <dimen name="viewpager_item_icon_top">4px</dimen>
+    <dimen name="viewpager_item_padding">5px</dimen>
+    <dimen name="viewpager_item_padding_lr">5px</dimen>
+    <dimen name="viewpager_item_padding_lr1">35px</dimen>
+    <dimen name="viewpager_item_padding_tp">80px</dimen>
+    <dimen name="viewpager_item_text_bottom">5px</dimen>
+    <dimen name="viewpager_item_text_w">210px</dimen>
+    <dimen name="viewpager_item_textsize">30px</dimen>
+    <dimen name="viewpager_item_w">159px</dimen>
+    <dimen name="viewpager_left">20px</dimen>
+    <dimen name="viewpager_w">1105px</dimen>
+</resources>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="apn_auth_entries">
+        <item>wala</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP o CHAP</item>
+    </array>
+    <array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </array>
+    <array name="app_install_location_entries">
+        <item>Panloob na imbakan</item>
+        <item>Hindi ma -load SD Card</item>
+        <item>Tinutukoy ng system</item>
+    </array>
+    <array name="app_ops_categories">
+        <item>Lokasyon</item>
+        <item>personal</item>
+        <item>Maikling mensahe</item>
+        <item>Media</item>
+        <item>kagamitan</item>
+    </array>
+    <array name="app_ops_labels">
+        <item>Lokasyon</item>
+        <item>Lokasyon</item>
+        <item>Lokasyon</item>
+        <item>panginginig ng boses</item>
+        <item>Pagbabasa ng contact</item>
+        <item>Baguhin ang contact person</item>
+        <item>Basahin ang record record</item>
+        <item>Baguhin ang record record</item>
+        <item>Pagbasa ng Kalendaryo</item>
+        <item>Baguhin ang kalendaryo</item>
+        <item>Lokasyon</item>
+        <item>Isyu ng paunawa</item>
+        <item>Lokasyon</item>
+        <item>numero ng dial</item>
+        <item>Basahin ang mga text message/Milya</item>
+        <item>Sumulat ng mga text message/Milya</item>
+        <item>Makatanggap ng mga text message/Milya</item>
+        <item>Makatanggap ng mga text message/Milya</item>
+        <item>Makatanggap ng mga text message/Milya</item>
+        <item>Makatanggap ng mga text message/Milya</item>
+        <item>nagpapadala ng isang text message/Milya</item>
+        <item>Basahin ang mga text message/Milya</item>
+        <item>Sumulat ng mga text message/Milya</item>
+        <item>Baguhin ang mga setting</item>
+        <item>Gumuhit sa tuktok</item>
+        <item>Bisitahin ang paunawa</item>
+        <item>camera</item>
+        <item>Pag -record ng audio</item>
+        <item>Maglaro ng audio</item>
+        <item>Basahin ang nilalaman ng clipboard</item>
+        <item>Baguhin ang nilalaman ng clipboard</item>
+        <item>Pindutan ng media</item>
+        <item>Audio Focus</item>
+        <item>Pangunahing dami</item>
+        <item>Dami ng boses</item>
+        <item>Dami ng tunog ng kampanilya</item>
+        <item>Dami ng media</item>
+        <item>Dami ng alarma</item>
+        <item>Dami ng abiso</item>
+        <item>Dami ng Bluetooth</item>
+        <item>Panatilihin ang isang gising na estado</item>
+        <item>Lokasyon</item>
+        <item>Lokasyon ng impormasyon</item>
+    </array>
+    <array name="app_ops_summaries">
+        <item>Magaspang na posisyon</item>
+        <item>Tumpak na lokasyon</item>
+        <item>GPS</item>
+        <item>panginginig ng boses</item>
+        <item>Pagbabasa ng contact</item>
+        <item>Baguhin ang taong contact</item>
+        <item>Basahin ang record record</item>
+        <item>Baguhin ang record record</item>
+        <item>Pagbasa ng Kalendaryo</item>
+        <item>Baguhin ang kalendaryo</item>
+        <item>WLAN pag -scan</item>
+        <item>ipagbigay -alam</item>
+        <item>Pag -scan ng Mobile Network</item>
+        <item>numero ng dial</item>
+        <item>Basahin ang mga text message</item>
+        <item>Sumulat ng mga text message</item>
+        <item>Makatanggap ng mga text message</item>
+        <item>Makatanggap ng mga emergency text message</item>
+        <item>Makatanggap ng MMS</item>
+        <item>pumalit WAP PUSH impormasyon</item>
+        <item>nagpapadala ng isang text message</item>
+        <item>Basahin ICC Maikling mensahe</item>
+        <item>Sumulat ICC Maikling mensahe</item>
+        <item>Baguhin ang mga setting</item>
+        <item>Gumuhit sa tuktok</item>
+        <item>Bisitahin ang paunawa</item>
+        <item>camera</item>
+        <item>Pag -record ng audio</item>
+        <item>Maglaro ng audio</item>
+        <item>Basahin ang nilalaman ng clipboard</item>
+        <item>Baguhin ang nilalaman ng clipboard</item>
+        <item>Pindutan ng media</item>
+        <item>Audio Focus</item>
+        <item>Pangunahing dami</item>
+        <item>Dami ng boses</item>
+        <item>Dami ng tunog ng kampanilya</item>
+        <item>Dami ng media</item>
+        <item>Dami ng alarma</item>
+        <item>Dami ng abiso</item>
+        <item>Dami ng Bluetooth</item>
+        <item>Panatilihin ang isang gising na estado</item>
+        <item>Lokasyon ng pagsubaybay</item>
+        <item>Surveillance High -power Lokasyon ng Impormasyon sa Lokasyon</item>
+    </array>
+    <array name="app_process_limit_entries">
+        <item>Pamantayang paghihigpit</item>
+        <item>Walang proseso ng background</item>
+        <item>Hindi dapat lumampas 1 Proseso</item>
+        <item>Hindi dapat lumampas 2 Proseso</item>
+        <item>Hindi dapat lumampas 3 Proseso</item>
+        <item>Hindi dapat lumampas 4 Proseso</item>
+    </array>
+    <array name="auto_sleep_time">
+        <item>pagsasara</item>
+        <item>1Minuto</item>
+        <item>10Minuto</item>
+        <item>30Minuto</item>
+        <item>1Oras</item>
+        <item>3Oras</item>
+        <item>6Oras</item>
+    </array>
+    <array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>hindi tinukoy</item>
+    </array>
+    <array name="bluetooth_visibility_timeout_entries">
+        <item>2 Minuto</item>
+        <item>5 Minuto</item>
+        <item>1 Oras</item>
+        <item>Huwag kailanman oras</item>
+    </array>
+    <array name="emergency_tone_entries">
+        <item>pagsasara</item>
+        <item>alarma</item>
+        <item>panginginig ng boses</item>
+    </array>
+    <array name="hdcp_checking_summaries">
+        <item>Wala HDCP Suriin</item>
+        <item>Gumamit lamang HDCP Suriin DRM nilalaman</item>
+        <item>Gumamit HDCP Suriin</item>
+    </array>
+    <array name="hdcp_checking_titles">
+        <item>Huwag kailanman suriin</item>
+        <item>Suriin lang DRM nilalaman</item>
+        <item>Palaging suriin</item>
+    </array>
+    <array name="long_press_timeout_selector_titles">
+        <item>maikli</item>
+        <item>gitna</item>
+        <item>mahaba</item>
+    </array>
+    <array name="settings_items">
+        <item>Network at Bluetooth</item>
+        <item>Oras at Petsa</item>
+        <item>Mga setting ng tunog</item>
+        <item>setting ng pagpapakita</item>
+        <item>Paraan ng wika at pag -input</item>
+        <item>Impormasyon tungkol sa device</item>
+        <item>Pamamahala ng Application</item>
+        <item>I -reset</item>
+    </array>
+    <array name="timezone_filters">
+        <item>America</item>
+        <item>Europa</item>
+        <item>Africa</item>
+        <item>Asya</item>
+        <item>Australia</item>
+        <item>Karagatang Pasipiko</item>
+        <item>lahat</item>
+    </array>
+    <array name="transition_animation_scale_entries">
+        <item>Isara ang animation</item>
+        <item>Animation 0.5x</item>
+        <item>Animation 1x</item>
+        <item>Animation 1.5x</item>
+        <item>Animation 2x</item>
+        <item>Animation 5x</item>
+        <item>Animation 10x</item>
+    </array>
+    <array name="usage_stats_display_order_types">
+        <item>Oras ng paggamit</item>
+        <item>Mga bilang ng operasyon</item>
+        <item>Pangalan ng Application</item>
+        <item>Pangalan ng Application</item>
+    </array>
+    <array name="vpn_states">
+        <item>Ang linya ay naka -disconnect</item>
+        <item>Pagsisimula...</item>
+        <item>pagkonekta...</item>
+        <item>konektado</item>
+        <item>Oras sa labas</item>
+        <item>mabigo</item>
+    </array>
+    <array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>Na may pre -shared key L2TP/IPSec VPN</item>
+        <item>Sertipiko L2TP/IPSec VPN</item>
+        <item>Magkaroon ng isang pre -sharing key at gawin Xauth Tunay IPSec VPN</item>
+        <item>Magkaroon ng isang sertipiko at gawin ito Xauth Tunay IPSec VPN</item>
+        <item>Na may isang sertipiko at isang pag -verify ng pagkakakilanlan ng hybrid IPSec VPN</item>
+    </array>
+    <array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_frequency_band_entries">
+        <item>awtomatiko</item>
+        <item>Gumamit lamang 5 GHz Frequency Band</item>
+        <item>Gumamit lamang 2.4 GHz Frequency Band</item>
+    </array>
+    <array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
+    </array>
+    <array name="wifi_network_setup">
+        <item>pagsasara</item>
+        <item>Pindutan</item>
+        <item>Kumuha mula sa access point PIN</item>
+        <item>Mula noon PIN</item>
+    </array>
+    <array name="wifi_p2p_status">
+        <item>konektado</item>
+        <item>Mag-anyaya</item>
+        <item>mabigo</item>
+        <item>Magagamit</item>
+        <item>Wala sa saklaw</item>
+    </array>
+    <array name="wifi_p2p_wps_setup">
+        <item>Pindutan</item>
+        <item>Nakuha mula sa mga kagamitan sa pagsilip PIN</item>
+        <item>Mula noon PIN</item>
+    </array>
+    <array name="wifi_phase2_entries">
+        <item>wala</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </array>
+    <array name="wifi_proxy_settings">
+        <item>wala</item>
+        <item>Manu -mano</item>
+    </array>
+    <array name="wifi_signal">
+        <item>mahina</item>
+        <item>Karaniwan</item>
+        <item>Malakas</item>
+        <item>makapangyarihan</item>
+    </array>
+    <array name="wifi_sleep_policy_entries">
+        <item>Palagi</item>
+        <item>Kapag singilin lang</item>
+        <item>Hindi kailanman（Dagdagan nito ang trapiko ng data）</item>
+    </array>
+    <array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Palagi</item>
+        <item>Kapag singilin lang</item>
+        <item>Hindi kailanman</item>
+    </array>
+    <array name="wifi_status">
+        <item />
+        <item>Pag -scan...</item>
+        <item>pagkonekta...</item>
+        <item>Pagpapatunay...</item>
+        <item>Pagkuha IP address...</item>
+        <item>konektado</item>
+        <item>Tumahimik</item>
+        <item>Itapon ang koneksyon...</item>
+        <item>Itapon ang koneksyon</item>
+        <item>mabigo</item>
+    </array>
+    <array name="wifi_status_with_ssid">
+        <item />
+        <item>Pag -scan...</item>
+        <item>Ay konektado sa %1$s...</item>
+        <item>Pumasa %1$s Pagpapatunay...</item>
+        <item>Maging %1$s Makuha IP address...</item>
+        <item>Konektado %1$s</item>
+        <item>Tumahimik</item>
+        <item>Paghiwa -hiwalay at pagkakakonekta %1$s Koneksyon...</item>
+        <item>Itapon ang koneksyon</item>
+        <item>mabigo</item>
+    </array>
+    <array name="window_animation_scale_entries">
+        <item>Isara ang animation</item>
+        <item>Animation 0.5x</item>
+        <item>Animation 1x</item>
+        <item>Animation 1.5x</item>
+        <item>Animation 2x</item>
+        <item>Animation 5x</item>
+        <item>Animation 10x</item>
+    </array>
+</resources>

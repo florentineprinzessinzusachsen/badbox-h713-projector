@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="animator_duration_scale_entries">
+        <item>Animaatio pois käytöstä</item>
+        <item>Animaatioasteikko 0,5-kertainen</item>
+        <item>Animaatioasteikko 1-kertainen</item>
+        <item>Animaatioasteikko 1,5-kertainen</item>
+        <item>Animaatioasteikko 2-kertainen</item>
+        <item>Animaatioasteikko 5-kertainen</item>
+        <item>Animaatioasteikko 10-kertainen</item>
+    </array>
+    <array name="apn_auth_entries">
+        <item>Ei mitään</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP tai CHAP</item>
+    </array>
+    <array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </array>
+    <array name="app_install_location_entries">
+        <item>Sovelluksen nimi</item>
+        <item>Laitteen sisäinen tallennustila</item>
+        <item>Irrotettava SD-kortti</item>
+    </array>
+    <array name="app_ops_categories">
+        <item>Järjestelmän määrittämä</item>
+        <item>Sijainti</item>
+        <item>Henkilökohtainen</item>
+        <item>SMS</item>
+        <item>Media</item>
+    </array>
+    <array name="app_ops_labels">
+        <item>Sijainti</item>
+        <item>Sijainti</item>
+        <item>Sijainti</item>
+        <item>Tärinä</item>
+        <item>Lue yhteystiedot</item>
+        <item>Muokkaa yhteystietoa</item>
+        <item>Lue puheluhistoria</item>
+        <item>Muokkaa puheluhistoriaa</item>
+        <item>Lue kalenteri</item>
+        <item>Muokkaa kalenteria</item>
+        <item>Sijainti</item>
+        <item>Lähetä ilmoitus</item>
+        <item>Sijainti</item>
+        <item>Soita puhelu</item>
+        <item>Lue teksti- ja multimediaviestejä</item>
+        <item>Kirjoita teksti- tai multimediaviestejä</item>
+        <item>Vastaanota teksti- ja multimediaviestejä</item>
+        <item>Vastaanota teksti- ja multimediaviestejä</item>
+        <item>Vastaanota teksti- ja multimediaviestejä</item>
+        <item>Vastaanota teksti- ja multimediaviestejä</item>
+        <item>Lähetä teksti- ja multimediaviestejä</item>
+        <item>Lue teksti- ja multimediaviestejä</item>
+        <item>Kirjoita teksti- tai multimediaviestejä</item>
+        <item>Muokkaa asetuksia</item>
+        <item>Piirrä päälle</item>
+        <item>Käytä ilmoituksia</item>
+        <item>Kamera</item>
+        <item>Tallenna ääni</item>
+        <item>Toista ääni</item>
+        <item>Lue leikepöydän sisältö</item>
+        <item>Muokkaa leikepöydän sisältöä</item>
+        <item>Media-painike</item>
+        <item>Äänen tarkennus</item>
+        <item>Master-äänenvoimakkuus</item>
+        <item>Äänenvoimakkuus</item>
+        <item>Soittoäänen äänenvoimakkuus</item>
+        <item>Median äänenvoimakkuus</item>
+        <item>Hälytyksen äänenvoimakkuus</item>
+        <item>Ilmoitusten määrä</item>
+        <item>Bluetoothin äänenvoimakkuus</item>
+        <item>Valvoa</item>
+        <item>Sijainti</item>
+    </array>
+    <array name="app_ops_summaries">
+        <item>Laite</item>
+        <item>Karkea sijainti</item>
+        <item>Tarkka sijainti</item>
+        <item>GPS</item>
+        <item>Tärinä</item>
+        <item>Lue yhteystiedot</item>
+        <item>Muokkaa yhteystietoa</item>
+        <item>Lue puheluhistoria</item>
+        <item>Muokkaa puheluhistoriaa</item>
+        <item>Lue kalenteri</item>
+        <item>Muokkaa kalenteria</item>
+        <item>Wi-Fi-haku</item>
+        <item>Ilmoitukset</item>
+        <item>Solun skannaus</item>
+        <item>Soita puhelu</item>
+        <item>Lue tekstiviestejä</item>
+        <item>Kirjoita tekstiviesti</item>
+        <item>Vastaanota tekstiviestejä</item>
+        <item>Vastaanota kiireellisiä tekstiviestejä</item>
+        <item>Vastaanota multimediaviestejä</item>
+        <item>WAP PUSH -viestien vastaanottaminen</item>
+        <item>Lähetä tekstiviesti</item>
+        <item>Lue ICC-tekstiviesti</item>
+        <item>Kirjoita ICC-tekstiviesti</item>
+        <item>Muokkaa asetuksia</item>
+        <item>Piirrä päälle</item>
+        <item>Käytä ilmoituksia</item>
+        <item>Kamera</item>
+        <item>Tallenna ääni</item>
+        <item>Toista ääni</item>
+        <item>Lue leikepöydän sisältö</item>
+        <item>Muokkaa leikepöydän sisältöä</item>
+        <item>Media-painike</item>
+        <item>Äänen tarkennus</item>
+        <item>Master-äänenvoimakkuus</item>
+        <item>Äänenvoimakkuus</item>
+        <item>Soittoäänen äänenvoimakkuus</item>
+        <item>Median äänenvoimakkuus</item>
+        <item>Hälytyksen äänenvoimakkuus</item>
+        <item>Ilmoitusten määrä</item>
+        <item>Bluetoothin äänenvoimakkuus</item>
+        <item>Valvoa</item>
+        <item>Sijainnin valvonta</item>
+    </array>
+    <array name="app_process_limit_entries">
+        <item>Normaalit rajoitukset</item>
+        <item>Taustaprosesseja ei sallita</item>
+        <item>Enintään 1 prosessi</item>
+        <item>Enintään 2 prosessia</item>
+        <item>Enintään 3 prosessia</item>
+        <item>Enintään 4 prosessia</item>
+    </array>
+    <array name="battery_labels">
+        <item>0 %</item>
+        <item>50 %</item>
+        <item>100 %</item>
+    </array>
+    <array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Määrittelemätön</item>
+    </array>
+    <array name="bluetooth_visibility_timeout_entries">
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>1 tunti</item>
+        <item>Älä koskaan aikalisää</item>
+    </array>
+    <array name="color_mode_descriptions">
+        <item>Tehostetut värit</item>
+        <item>Ihmissilmän näkemät luonnolliset värit</item>
+        <item>Digitaaliselle sisällölle parhaiten sopivat värit</item>
+    </array>
+    <array name="color_mode_names">
+        <item>Voimakas (oletus)</item>
+        <item>Luonnollinen</item>
+        <item>Normaali</item>
+    </array>
+    <array name="debug_hw_overdraw_entries">
+        <item>Ei käytössä</item>
+        <item>Näytä päällekkäiset alueet</item>
+        <item>Näytä alueet puna-vihersokeille näkyvinä</item>
+    </array>
+    <array name="emergency_tone_entries">
+        <item>Sulje</item>
+        <item>Hälytykset</item>
+        <item>Tärinä</item>
+    </array>
+    <array name="enable_opengl_traces_entries">
+        <item>Ei mitään</item>
+        <item>Logcat</item>
+        <item>Systrace (grafiikka)</item>
+        <item>Kutsu pinoa, jos glGetError tapaht.</item>
+    </array>
+    <array name="hdcp_checking_summaries">
+        <item>Älä koskaan käytä HDCP-tarkistuksia</item>
+        <item>Käytä HDCP:tä vain DRM-sisällön tarkistamiseen</item>
+        <item>Käytä aina HDCP-tarkistuksia</item>
+    </array>
+    <array name="hdcp_checking_titles">
+        <item>Älä koskaan tarkista</item>
+        <item>Tarkista vain DRM-sisältö</item>
+        <item>Tarkista aina</item>
+    </array>
+    <array name="long_press_timeout_selector_titles">
+        <item>Lyhyt</item>
+        <item>Keskikokoinen</item>
+        <item>Pitkä</item>
+    </array>
+    <array name="overlay_display_devices_entries">
+        <item>Ei mitään</item>
+        <item>480p</item>
+        <item>480p (turvallinen)</item>
+        <item>720p</item>
+        <item>720p (turvallinen)</item>
+        <item>1080p</item>
+        <item>1080p (turvallinen)</item>
+        <item>4K</item>
+        <item>4K (turvallinen)</item>
+        <item>4K (skaalattu)</item>
+        <item>4K (skaalattu, turvallinen)</item>
+        <item>720p, 1080p (kaksoisnäyttö)</item>
+    </array>
+    <array name="select_logd_size_lowram_titles">
+        <item>Ei käytössä</item>
+        <item>64 kt</item>
+        <item>256 kt</item>
+        <item>1 Mt</item>
+    </array>
+    <array name="select_logd_size_summaries">
+        <item>Ei käytössä</item>
+        <item>64 kt / lokipuskuri</item>
+        <item>256 kt / lokipuskuri</item>
+        <item>1 Mt / lokipuskuri</item>
+        <item>4 Mt / lokipuskuri</item>
+        <item>16 Mt / lokipuskuri</item>
+    </array>
+    <array name="select_logd_size_titles">
+        <item>Ei käytössä</item>
+        <item>64 kt</item>
+        <item>256 kt</item>
+        <item>1 Mt</item>
+        <item>4 Mt</item>
+        <item>16 Mt</item>
+    </array>
+    <array name="select_logpersist_summaries">
+        <item>Ei käytössä</item>
+        <item>Kaikki lokipuskurit</item>
+        <item>Kaikki paitsi radiolokipuskurit</item>
+        <item>vain kernel-lokipuskuri</item>
+    </array>
+    <array name="select_logpersist_titles">
+        <item>Ei käytössä</item>
+        <item>Kaikki</item>
+        <item>Kaikki paitsi radio</item>
+        <item>vain kernel</item>
+    </array>
+    <array name="settings_items">
+        <item>Verkko ja Bluetooth</item>
+        <item>Aika ja päivämäärä</item>
+        <item>Ääniasetukset</item>
+        <item>Näytön asetukset</item>
+        <item>Kieli ja syöttötavat</item>
+        <item>Laitteen tiedot</item>
+        <item>Sovellusten hallinta</item>
+        <item>Tehdasasetusten palautus</item>
+    </array>
+    <array name="show_non_rect_clip_entries">
+        <item>Pois</item>
+        <item>Piirrä ei-suorakulm. leikealue sinisellä</item>
+        <item>Korosta testatut piirtokom. vihreällä</item>
+    </array>
+    <array name="timezone_filters">
+        <item>Tehdasasetusten palautus</item>
+        <item>Amerikat</item>
+        <item>Eurooppa</item>
+        <item>Afrikka</item>
+        <item>Aasia</item>
+        <item>Australia</item>
+        <item>Tyynenmeren alue</item>
+    </array>
+    <array name="track_frame_time_entries">
+        <item>Pois käytöstä</item>
+        <item>Ruudulla palkkeina</item>
+        <item>Adb shell dumpsys gfxinfo</item>
+    </array>
+    <array name="transition_animation_scale_entries">
+        <item>Poista animaatio käytöstä</item>
+        <item>Animaation zoomaus 0,5x</item>
+        <item>Animaation zoomaus 1x</item>
+        <item>Animaation zoomaus 1.5x</item>
+        <item>Animaation zoomaus 2x</item>
+        <item>Animoitu zoomaus 5x</item>
+        <item>Animaation zoomaus 10x</item>
+    </array>
+    <array name="tts_rate_entries">
+        <item>Hyvin hidas</item>
+        <item>Hidas</item>
+        <item>Normaali</item>
+        <item>Nopea</item>
+        <item>Nopeampi</item>
+        <item>Hyvin nopea</item>
+        <item>Nopea</item>
+        <item>Erittäin nopea</item>
+        <item>Nopein</item>
+    </array>
+    <array name="usage_stats_display_order_types">
+        <item>Kaikki</item>
+        <item>Aika käyttää</item>
+        <item>Aloitusten määrä</item>
+        <item>Sovelluksen nimi</item>
+    </array>
+    <array name="usb_configuration_titles">
+        <item>Lataaminen</item>
+        <item>MTP (median siirtoprotokolla)</item>
+        <item>PTP (kuvan siirtoprotokolla)</item>
+        <item>RNDIS (USB-ethernet)</item>
+        <item>Äänilähde</item>
+        <item>MIDI</item>
+    </array>
+    <array name="vpn_states">
+        <item>Yhteys katkaistu</item>
+        <item>Alustaminen ...</item>
+        <item>Yhdistetään...</item>
+        <item>Yhdistetty</item>
+        <item>Aikakatkaisu</item>
+        <item>Epäonnistui</item>
+    </array>
+    <array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN esijaetulla avaimella</item>
+        <item>L2TP/IPSec VPN sertifikaatilla</item>
+        <item>IPSec VPN esijaetulla avaimella ja Xauth-todennuksella</item>
+        <item>IPSec VPN sertifikaatilla ja Xauth-todennuksella</item>
+        <item>IPSec VPN sertifikaatilla ja hybriditodennuksella</item>
+    </array>
+    <array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_frequency_band_entries">
+        <item>Automaattinen</item>
+        <item>Käytä vain 5 GHz:n taajuutta</item>
+        <item>Käytä vain 2,4 GHz:n kaistaa</item>
+    </array>
+    <array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Staattinen</item>
+    </array>
+    <array name="wifi_network_setup">
+        <item>Sulje</item>
+        <item>Painike</item>
+        <item>PIN-koodi saatu tukiasemasta</item>
+        <item>Tästä laitteesta luotu PIN-koodi</item>
+    </array>
+    <array name="wifi_p2p_status">
+        <item>Yhdistetty</item>
+        <item>Kutsuttu</item>
+        <item>Epäonnistui</item>
+        <item>Saatavilla</item>
+        <item>Kantaman ulkopuolella</item>
+    </array>
+    <array name="wifi_p2p_wps_setup">
+        <item>Painike</item>
+        <item>PIN-koodi saatu vertaislaitteesta</item>
+        <item>Tästä laitteesta luotu PIN-koodi</item>
+    </array>
+    <array name="wifi_phase2_entries">
+        <item>Ei mitään</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </array>
+    <array name="wifi_proxy_settings">
+        <item>Ei mitään</item>
+        <item>Manuaalinen</item>
+    </array>
+    <array name="wifi_signal">
+        <item>Heikko</item>
+        <item>Yleistä</item>
+        <item>Vahvempi</item>
+        <item>Vahva</item>
+    </array>
+    <array name="wifi_sleep_policy_entries">
+        <item>Aina</item>
+        <item>Vain lataus</item>
+        <item>Ei koskaan (lisää dataliikennettä)</item>
+    </array>
+    <array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Aina</item>
+        <item>Vain lataus</item>
+        <item>Ei koskaan</item>
+    </array>
+    <array name="wifi_status">
+        <item>Skannaus...</item>
+        <item>Yhdistetään...</item>
+        <item>Todennetaan...</item>
+        <item>IP-osoitteen hankkiminen...</item>
+        <item>Yhdistetty</item>
+        <item>Keskeytetty</item>
+        <item>Yhteyden katkaiseminen...</item>
+        <item>Yhteys katkaistu</item>
+        <item>Epäonnistui</item>
+    </array>
+    <array name="wifi_status_with_ssid">
+        <item />
+        <item>正在扫描...</item>
+        <item>正在连接到 %1$s...</item>
+        <item>正在通过 %1$s 进行身份验证...</item>
+        <item>正在从 %1$s 获取 IP 地址...</item>
+        <item>已连接到 %1$s</item>
+        <item>已暂停</item>
+        <item>正在断开与 %1$s 的连接...</item>
+        <item>已断开连接</item>
+        <item>失败</item>
+    </array>
+    <array name="window_animation_scale_entries">
+        <item>Poista animaatio käytöstä</item>
+        <item>Animaation zoomaus 0,5x</item>
+        <item>Animaation zoomaus 1x</item>
+        <item>Animaation zoomaus 1.5x</item>
+        <item>Animaation zoomaus 2x</item>
+        <item>Animoitu zoomaus 5x</item>
+        <item>Animaation zoomaus 10x</item>
+    </array>
+</resources>

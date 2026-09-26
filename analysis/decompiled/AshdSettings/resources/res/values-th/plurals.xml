@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">ควรรวมรหัสผ่านอย่างน้อย 1 จดหมาย</item>
+        <item quantity="other">ควรรวมรหัสผ่านอย่างน้อย %d จดหมาย</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">ควรรวมรหัสผ่านอย่างน้อย 1 ตัวอักษรตัวพิมพ์เล็ก</item>
+        <item quantity="other">ควรรวมรหัสผ่านอย่างน้อย %d ตัวอักษรตัวพิมพ์เล็ก</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">ควรรวมรหัสผ่านอย่างน้อย 1 อักขระที่ไม่ใช่แอล</item>
+        <item quantity="other">ควรรวมรหัสผ่านอย่างน้อย %d อักขระที่ไม่ใช่แอล</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">ควรรวมรหัสผ่านอย่างน้อย 1 ตัวเลข</item>
+        <item quantity="other">ควรรวมรหัสผ่านอย่างน้อย %d ตัวเลข</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">ควรรวมรหัสผ่านอย่างน้อย 1 สัญลักษณ์พิเศษ</item>
+        <item quantity="other">ควรรวมรหัสผ่านอย่างน้อย %d สัญลักษณ์พิเศษ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">ควรรวมรหัสผ่านอย่างน้อย 1 จดหมายทุน</item>
+        <item quantity="other">ควรรวมรหัสผ่านอย่างน้อย %d จดหมายทุน</item>
+    </plurals>
+</resources>

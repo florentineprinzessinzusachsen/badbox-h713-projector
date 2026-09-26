@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="25sp"
+    android:title="@string/sound_devices_manager"
+    android:key="sound_devices_manager_screen">
+    <PreferenceCategory
+        android:textSize="30dp"
+        android:title="@string/sound_output_devices"
+        android:key="sound_playback_list"/>
+</PreferenceScreen>

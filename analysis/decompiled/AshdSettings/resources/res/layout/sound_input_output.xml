@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:rk="http://schemas.android.com/apk/res/com.android.settings" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/alter_bk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TabWidget
+        android:id="@+id/tabwidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/input_device"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginRight="-3dp"
+            android:text="@string/sound_input_devices"
+            android:layout_weight="1"/>
+        <TextView
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/output_device"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginRight="-3dp"
+            android:text="@string/sound_output_devices"
+            android:layout_weight="1"/>
+    </TabWidget>
+    <TextView
+        android:textSize="30dp"
+        android:textColor="#ffffffff"
+        android:id="@+id/no_device"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"/>
+</LinearLayout>

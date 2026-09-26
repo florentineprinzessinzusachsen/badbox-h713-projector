@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="animator_duration_scale_entries">
+        <item>إيقاف الرسوم المتحركة</item>
+        <item>‏حجم الرسوم المتحركة ‎.5x</item>
+        <item>‏حجم الرسوم المتحركة 1x</item>
+        <item>‏حجم الرسوم المتحركة 1.5x</item>
+        <item>‏حجم الرسوم المتحركة 2x</item>
+        <item>‏حجم الرسوم المتحركة 5x</item>
+        <item>‏حجم الرسوم المتحركة 10x</item>
+    </array>
+    <array name="apn_auth_entries">
+        <item>لا شيء</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP أو CHAP</item>
+    </array>
+    <array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </array>
+    <array name="app_install_location_entries">
+        <item>التخزين الداخلي للجهاز</item>
+        <item>بطاقة SD القابلة للإزالة</item>
+        <item>يحددها النظام</item>
+    </array>
+    <array name="app_ops_categories">
+        <item>الموقع</item>
+        <item>الشخصي</item>
+        <item>الرسائل</item>
+        <item>الوسائط</item>
+        <item>الجهاز</item>
+    </array>
+    <array name="app_ops_labels">
+        <item>الموقع</item>
+        <item>الموقع</item>
+        <item>الموقع</item>
+        <item>الاهتزاز</item>
+        <item>قراءة جهات الاتصال</item>
+        <item>تعديل جهات الاتصال</item>
+        <item>قراءة سجل المكالمات</item>
+        <item>تعديل سجل المكالمات</item>
+        <item>قراءة التقويم</item>
+        <item>تعديل التقويم</item>
+        <item>الموقع</item>
+        <item>إصدار إشعار</item>
+        <item>الموقع</item>
+        <item>إجراء مكالمة</item>
+        <item>قراءة الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>كتابة الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>استلام الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>استلام الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>استلام الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>استلام الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>إرسال الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>قراءة الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>كتابة الرسائل القصيرة/الوسائط المتعددة</item>
+        <item>تعديل الإعدادات</item>
+        <item>الرسم في الأعلى</item>
+        <item>الوصول إلى الإشعارات</item>
+        <item>الكاميرا</item>
+        <item>تسجيل الصوت</item>
+        <item>تشغيل الصوت</item>
+        <item>قراءة محتوى الحافظة</item>
+        <item>تعديل محتوى الحافظة</item>
+        <item>زر الوسائط</item>
+        <item>التركيز على الصوت</item>
+        <item>الحجم الرئيسي</item>
+        <item>حجم الصوت</item>
+        <item>حجم الرنين</item>
+        <item>حجم الوسائط</item>
+        <item>حجم المنبه</item>
+        <item>حجم الإشعارات</item>
+        <item>حجم البلوتوث</item>
+        <item>البقاء مستيقظًا</item>
+        <item>الموقع</item>
+        <item>معلومات الموقع</item>
+    </array>
+    <array name="app_ops_summaries">
+        <item>الموقع التقريبي</item>
+        <item>الموقع الدقيق</item>
+        <item>GPS</item>
+        <item>الاهتزاز</item>
+        <item>قراءة جهات الاتصال</item>
+        <item>تعديل جهات الاتصال</item>
+        <item>قراءة سجل المكالمات</item>
+        <item>تعديل سجل المكالمات</item>
+        <item>قراءة التقويم</item>
+        <item>تعديل التقويم</item>
+        <item>مسح WLAN</item>
+        <item>الإشعارات</item>
+        <item>مسح شبكات الهاتف</item>
+        <item>إجراء المكالمات</item>
+        <item>قراءة الرسائل</item>
+        <item>كتابة الرسائل</item>
+        <item>استلام الرسائل</item>
+        <item>استلام الرسائل العاجلة</item>
+        <item>استلام الرسائل المتعددة الوسائط</item>
+        <item>استلام رسائل WAP PUSH</item>
+        <item>إرسال الرسائل</item>
+        <item>قراءة رسائل ICC</item>
+        <item>كتابة رسائل ICC</item>
+        <item>تعديل الإعدادات</item>
+        <item>الرسم على القمة</item>
+        <item>الوصول إلى الإشعارات</item>
+        <item>الكاميرا</item>
+        <item>تسجيل الصوت</item>
+        <item>تشغيل الصوت</item>
+        <item>قراءة محتوى الحافظة</item>
+        <item>تعديل محتوى الحافظة</item>
+        <item>زر الوسائط</item>
+        <item>تركيز الصوت</item>
+        <item>الصوت الرئيسي</item>
+        <item>صوت المكالمات</item>
+        <item>صوت الرنين</item>
+        <item>صوت الوسائط</item>
+        <item>صوت التنبيهات</item>
+        <item>صوت الإشعارات</item>
+        <item>صوت البلوتوث</item>
+        <item>الحفاظ على حالة الاستيقاظ</item>
+        <item>مراقبة الموقع</item>
+        <item>مراقبة خدمات الموقع ذات استهلاك الطاقة العالي</item>
+    </array>
+    <array name="app_process_limit_entries">
+        <item>الحد القياسي</item>
+        <item>عدم السماح بالعمليات الخلفية</item>
+        <item>عدم تجاوز عملية واحدة</item>
+        <item>عدم تجاوز عمليتين</item>
+        <item>عدم تجاوز ثلاث عمليات</item>
+        <item>عدم تجاوز أربع عمليات</item>
+    </array>
+    <array name="auto_sleep_time">
+        <item>إيقاف</item>
+        <item>1 دقيقة</item>
+        <item>10 دقائق</item>
+        <item>30 دقيقة</item>
+        <item>1 ساعة</item>
+        <item>3 ساعات</item>
+        <item>6 ساعات</item>
+    </array>
+    <array name="battery_labels">
+        <item>٠‏٪</item>
+        <item>٥٠٪</item>
+        <item>٪۱۰۰</item>
+    </array>
+    <array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>غير محدد</item>
+    </array>
+    <array name="bluetooth_visibility_timeout_entries">
+        <item>2 دقيقة</item>
+        <item>5 دقائق</item>
+        <item>1 ساعة</item>
+        <item>بدون انتهاء الوقت</item>
+    </array>
+    <array name="color_mode_descriptions">
+        <item>ألوان محسَّنة</item>
+        <item>الألوان الطبيعية تراها العين</item>
+        <item>الألوان المحسَّنة للمحتوى الرقمي</item>
+    </array>
+    <array name="color_mode_names">
+        <item>نابض بالحياة (افتراضي)</item>
+        <item>طبيعي</item>
+        <item>قياسي</item>
+    </array>
+    <array name="debug_hw_overdraw_entries">
+        <item>إيقاف</item>
+        <item>عرض مناطق تجاوز الحد</item>
+        <item>‏عرض مناطق العرض المسرحي Deuteranomaly</item>
+    </array>
+    <array name="emergency_tone_entries">
+        <item>إيقاف</item>
+        <item>تنبيه</item>
+        <item>اهتزاز</item>
+    </array>
+    <array name="enable_opengl_traces_entries">
+        <item>لا شيء</item>
+        <item>Logcat</item>
+        <item>‏Systrace (رسومات)</item>
+        <item>‏تكدس الاستدعاءات في دالة glGetError</item>
+    </array>
+    <array name="hdcp_checking_summaries">
+        <item>عدم استخدام التحقق من HDCP مطلقًا</item>
+        <item>استخدام التحقق من HDCP فقط لمحتوى DRM</item>
+        <item>استخدام التحقق من HDCP دائمًا</item>
+    </array>
+    <array name="hdcp_checking_titles">
+        <item>عدم التحقق مطلقًا</item>
+        <item>التحقق فقط من محتوى DRM</item>
+        <item>التحقق دائمًا</item>
+    </array>
+    <array name="long_press_timeout_selector_titles">
+        <item>قصير</item>
+        <item>متوسط</item>
+        <item>طويل</item>
+    </array>
+    <array name="overlay_display_devices_entries">
+        <item>لا شيء</item>
+        <item>480 بكسل</item>
+        <item>480 بكسل (العرض آمن)</item>
+        <item>720 بكسل</item>
+        <item>720 بكسل (العرض آمن)</item>
+        <item>1080 بكسل</item>
+        <item>1080 بكسل (العرض آمن)</item>
+        <item>4K</item>
+        <item>‏4K (العرض آمن)</item>
+        <item>‏4K (تمت زيادة دقة العرض)</item>
+        <item>‏4K (تمت زيادة الدقة، والعرض آمن)</item>
+        <item>720 بكسل، 1080 بكسل (شاشة مزدوجة)</item>
+    </array>
+    <array name="select_logd_size_lowram_titles">
+        <item>إيقاف</item>
+        <item>٦٤ كيلوبايت</item>
+        <item>٢٥٦ كيلوبايت</item>
+        <item>1 ميغابايت</item>
+    </array>
+    <array name="select_logd_size_summaries">
+        <item>إيقاف</item>
+        <item>٦٤ كيلوبايت لكل ذاكرة تخزين مؤقت للتسجيل</item>
+        <item>٢٥٦ كيلوبايت لكل ذاكرة تخزين مؤقت للتسجيل</item>
+        <item>1 ميغابايت لكل ذاكرة تخزين مؤقت للتسجيل</item>
+        <item>٤ ميغابايت لكل ذاكرة تخزين مؤقت للتسجيل</item>
+        <item>١٦ ميغابايت لكل ذاكرة تخزين مؤقت للتسجيل</item>
+    </array>
+    <array name="select_logd_size_titles">
+        <item>إيقاف</item>
+        <item>٦٤ كيلوبايت</item>
+        <item>٢٥٦ كيلوبايت</item>
+        <item>1 ميغابايت</item>
+        <item>٤ ميغابايت</item>
+        <item>١٦ ميغابايت</item>
+    </array>
+    <array name="select_logpersist_summaries">
+        <item>إيقاف</item>
+        <item>كل المخازن المؤقتة للسجلات</item>
+        <item>كل المخازن المؤقتة باستثناء مخازن سجلات اللاسلكي</item>
+        <item>‏التخزين المؤقت لسجل kernel فقط</item>
+    </array>
+    <array name="select_logpersist_titles">
+        <item>إيقاف</item>
+        <item>الكل</item>
+        <item>الكل دون اللاسلكي</item>
+        <item>‏kernel فقط</item>
+    </array>
+    <array name="settings_items">
+        <item>الشبكة والبلوتوث</item>
+        <item>الوقت والتاريخ</item>
+        <item>إعدادات الصوت</item>
+        <item>إعدادات العرض</item>
+        <item>اللغة والإدخال</item>
+        <item>معلومات الجهاز</item>
+        <item>إدارة التطبيقات</item>
+        <item>إعادة ضبط المصنع</item>
+    </array>
+    <array name="show_non_rect_clip_entries">
+        <item>إيقاف</item>
+        <item>رسم منطقة قصاصة غير مستطيلة بالأزرق</item>
+        <item>إبراز أوامر رسم تم اختبارها بالأخضر</item>
+    </array>
+    <array name="timezone_filters">
+        <item>الأمريكيتان</item>
+        <item>أوروبا</item>
+        <item>أفريقيا</item>
+        <item>آسيا</item>
+        <item>أستراليا</item>
+        <item>المحيط الهادئ</item>
+        <item>الكل</item>
+    </array>
+    <array name="track_frame_time_entries">
+        <item>إيقاف</item>
+        <item>على الشاشة كأشرطة</item>
+        <item>‏باستخدام adb shell dumpsys gfxinfo</item>
+    </array>
+    <array name="transition_animation_scale_entries">
+        <item>إيقاف الرسوم المتحركة</item>
+        <item>مقياس الرسوم المتحركة 0.5x</item>
+        <item>مقياس الرسوم المتحركة 1x</item>
+    </array>
+    <array name="tts_rate_entries">
+        <item>بطيء جدًا</item>
+        <item>بطيء</item>
+        <item>عادي</item>
+        <item>سريع</item>
+        <item>أسرع</item>
+        <item>سريع جدًا</item>
+        <item>خاطف</item>
+        <item>خاطف جدًا</item>
+        <item>الأسرع</item>
+    </array>
+    <array name="usage_stats_display_order_types">
+        <item>وقت الاستخدام</item>
+        <item>عدد مرات التشغيل</item>
+        <item>اسم التطبيق</item>
+        <item>اسم التطبيق</item>
+    </array>
+    <array name="usb_configuration_titles">
+        <item>الشحن</item>
+        <item>‏بروتوكول نقل الوسائط (MTP)</item>
+        <item>‏بروتوكول نقل الصور (PTP)</item>
+        <item>‏RNDIS ‏(USB إيثرنت)‎</item>
+        <item>مصدر الصوت</item>
+        <item>MIDI</item>
+    </array>
+    <array name="vpn_states">
+        <item>تم قطع الاتصال</item>
+        <item>جارٍ التهيئة...</item>
+        <item>جارٍ الاتصال...</item>
+        <item>متصل</item>
+        <item>مهلة</item>
+        <item>فشل</item>
+    </array>
+    <array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN مع مفتاح مشترك مسبقًا</item>
+        <item>L2TP/IPSec VPN مع شهادة</item>
+        <item>IPSec VPN مع مفتاح مشترك مسبقًا ومصادقة Xauth</item>
+        <item>IPSec VPN مع شهادة ومصادقة Xauth</item>
+        <item>IPSec VPN مع شهادة ومصادقة مختلطة</item>
+    </array>
+    <array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_frequency_band_entries">
+        <item>تلقائي</item>
+        <item>استخدام نطاق التردد 5 جيجاهرتز فقط</item>
+        <item>استخدام نطاق التردد 2.4 جيجاهرتز فقط</item>
+    </array>
+    <array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>ثابت</item>
+    </array>
+    <array name="wifi_network_setup">
+        <item>إيقاف</item>
+        <item>زر</item>
+        <item>رقم التعريف الشخصي (PIN) من نقطة الوصول</item>
+        <item>رقم التعريف الشخصي (PIN) من هذا الجهاز</item>
+    </array>
+    <array name="wifi_p2p_status">
+        <item>متصل</item>
+        <item>مدعو</item>
+        <item>فشل</item>
+        <item>متاح</item>
+        <item>خارج النطاق</item>
+    </array>
+    <array name="wifi_p2p_wps_setup">
+        <item>زر</item>
+        <item>رقم التعريف الشخصي (PIN) من الجهاز المقابل</item>
+        <item>رقم التعريف الشخصي (PIN) من هذا الجهاز</item>
+    </array>
+    <array name="wifi_phase2_entries">
+        <item>لا شيء</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </array>
+    <array name="wifi_proxy_settings">
+        <item>لا شيء</item>
+        <item>يدوي</item>
+    </array>
+    <array name="wifi_signal">
+        <item>ضعيف</item>
+        <item>متوسط</item>
+        <item>قوي نوعًا ما</item>
+        <item>قوي</item>
+    </array>
+    <array name="wifi_sleep_policy_entries">
+        <item>دائمًا</item>
+        <item>فقط أثناء الشحن</item>
+        <item>أبدًا (قد يزيد من استهلاك البيانات)</item>
+    </array>
+    <array name="wifi_sleep_policy_entries_wifi_only">
+        <item>دائمًا</item>
+        <item>فقط أثناء الشحن</item>
+        <item>أبدًا</item>
+    </array>
+    <array name="wifi_status">
+        <item />
+        <item>جارٍ المسح...</item>
+        <item>جارٍ الاتصال...</item>
+        <item>جارٍ التحقق من الهوية...</item>
+        <item>جارٍ الحصول على عنوان IP...</item>
+        <item>متصل</item>
+        <item>متوقف مؤقتًا</item>
+        <item>جارٍ قطع الاتصال...</item>
+        <item>تم قطع الاتصال</item>
+        <item>فشل</item>
+    </array>
+    <array name="wifi_status_with_ssid">
+        <item />
+        <item>جارٍ المسح...</item>
+        <item>جارٍ الاتصال بشبكة %1$s...</item>
+        <item>جارٍ التحقق من الهوية عبر %1$s...</item>
+        <item>جارٍ الحصول على عنوان IP من %1$s...</item>
+        <item>متصل بشبكة %1$s</item>
+        <item>متوقف مؤقتًا</item>
+        <item>جارٍ قطع الاتصال بشبكة %1$s...</item>
+        <item>تم قطع الاتصال</item>
+        <item>فشل</item>
+    </array>
+    <array name="window_animation_scale_entries">
+        <item>إيقاف الرسوم المتحركة</item>
+        <item>مقياس الرسوم المتحركة 0.5x</item>
+        <item>مقياس الرسوم المتحركة 1x</item>
+        <item>مقياس الرسوم المتحركة 1.5x</item>
+        <item>مقياس الرسوم المتحركة 2x</item>
+        <item>مقياس الرسوم المتحركة 5x</item>
+        <item>مقياس الرسوم المتحركة 10x</item>
+    </array>
+</resources>

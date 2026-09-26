@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/list_selector_white"
+    android:padding="8dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <TextView
+        android:textSize="@dimen/listitem_textview_nameText_size"
+        android:textColor="#ffffffff"
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/listitem_textview_hight"
+        android:text="Large Text"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/listitem_linearlayout_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <Button
+            android:id="@+id/leftButton"
+            android:background="@drawable/btn_left_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="40dp"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@+id/valueText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/rightButton"
+            android:background="@drawable/btn_right_background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

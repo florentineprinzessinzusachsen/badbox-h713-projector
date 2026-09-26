@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">Kata laluan harus dimasukkan sekurang -kurangnya 1 Surat</item>
+        <item quantity="other">Kata laluan harus dimasukkan sekurang -kurangnya %d Surat</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">Kata laluan harus dimasukkan sekurang -kurangnya 1 Huruf kecil</item>
+        <item quantity="other">Kata laluan harus dimasukkan sekurang -kurangnya %d Huruf kecil</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">Kata laluan harus dimasukkan sekurang -kurangnya 1 Watak bukan alphabet</item>
+        <item quantity="other">Kata laluan harus dimasukkan sekurang -kurangnya %d Watak bukan alphabet</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">Kata laluan harus dimasukkan sekurang -kurangnya 1 Nombor</item>
+        <item quantity="other">Kata laluan harus dimasukkan sekurang -kurangnya %d Nombor</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">Kata laluan harus dimasukkan sekurang -kurangnya 1 Simbol khas</item>
+        <item quantity="other">Kata laluan harus dimasukkan sekurang -kurangnya %d Simbol khas</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">Kata laluan harus dimasukkan sekurang -kurangnya 1 Surat modal</item>
+        <item quantity="other">Kata laluan harus dimasukkan sekurang -kurangnya %d Surat modal</item>
+    </plurals>
+</resources>

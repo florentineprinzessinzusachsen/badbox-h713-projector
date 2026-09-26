@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="8137"
+    android:versionName="8.1.37"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.ashd.settings"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="30"/>
+    <protected-broadcast android:name="com.android.settings.CARRIER_PROVISIONING"/>
+    <protected-broadcast android:name="com.android.settings.TRIGGER_CARRIER_PROVISIONING"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.certinstaller.INSTALL_AS_USER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOVE_PACKAGE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.BACKUP"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.MANAGE_USB"/>
+    <uses-permission android:name="android.permission.SET_POINTER_SPEED"/>
+    <uses-permission android:name="android.permission.SET_KEYBOARD_LAYOUT"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
+    <uses-permission android:name="android.permission.CONFIGURE_DISPLAY_COLOR_MODE"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MANAGE_DEVICE_ADMINS"/>
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES"/>
+    <uses-permission android:name="android.permission.OEM_UNLOCK_STATE"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.MANAGE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USER_ACTIVITY"/>
+    <uses-permission android:name="android.permission.CHANGE_APP_IDLE_STATE"/>
+    <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1"/>
+    <application
+        android:theme="@style/AppTheme_ashd2"
+        android:label="@string/app_name"
+        android:icon="@drawable/settings_icon"
+        android:name="com.rk_itvui.settings.App"
+        android:directBootAware="true">
+        <meta-data
+            android:name="CHANNEL"
+            android:value="ashd2"/>
+        <activity
+            android:name="com.rk_itvui.settings.bluetooth.BluetoothIncomingFileConfirmDialogActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:configChanges="navigation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.INCOMINGFILE_CONFIRM_REQUEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/BluetoothActivityTheme_ashd2"
+            android:name="com.rk_itvui.settings.bluetooth.BluetoothSettingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.settings.BLUETOOTH_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/MyDialog"
+            android:name="com.rk_itvui.settings.bluetooth.dialog.BluetoothPairingDialog"/>
+        <activity
+            android:theme="@style/SplashTheme_ashd2"
+            android:name="com.rk_itvui.settings.Settings"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.settings.SETTINGS"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.network_settingnew">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.network.WirelessNetworkFragment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.network.WifiApFragment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.network.WifiFragment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/WifiActivityTheme_ashd2"
+            android:name="com.rk_itvui.settings.network.wifi.Wifi_setting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.rk_itvui.settings.network.wifi.Wifi_setting"/>
+                <action android:name="android.settings.WIFI_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:name="com.rk_itvui.settings.network.wifi.WifiAp_Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.language.LanguageInputmethod">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.language.LanguageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.language.LanguageSettingAlterDialogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Material.Dialog.Alert"
+            android:name="com.rk_itvui.settings.language.KeyBoardSettingAlterDialogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.settings.INPUT_METHOD_SETTINGS"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.android.settings.SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.sound.SoundSetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Holo.SMJ"
+            android:name="com.rk_itvui.settings.sound.SoundDevicesManager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.Holo.SMJ"
+            android:name="com.rk_itvui.settings.sound.VolumeSetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.VOICE_LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.datetime.DateTimeSetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/TimeZoneAlterDialogActivity_ashd2"
+            android:name="com.rk_itvui.settings.datetime.TimeZoneAlterDialogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.datetime.TimeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.PersonalSetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rk_itvui.settings.dialog.ManageApplications"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/InstalledAppDetails_ashd2"
+            android:name="com.rk_itvui.settings.dialog.RunningServiceDetails">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.developer.DevelopmentSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.settings.SECURITY_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+            android:label="@string/storage_title_usb"
+            android:name="com.rk_itvui.settings.deviceinfo.UsbSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.screen.ScreenScaleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.storeinfo.Storage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.factoryreset.Factoryreset">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.deviceversion.Deviceversion">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rk_itvui.settings.ScreensSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/upgrade_title"
+            android:name="com.rk_itvui.settings.upgrade.UpgradeActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:theme="@style/InstalledAppDetails_ashd2"
+            android:name="com.rk_itvui.settings.dialog.InstalledAppDetails"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/FallbackHome"
+            android:label=""
+            android:name="com.rk_itvui.settings.system.FallbackHome"
+            android:excludeFromRecents="true"
+            android:screenOrientation="nosensor">
+            <intent-filter android:priority="-900">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:label="PairingDialogService"
+            android:name="com.rk_itvui.settings.bluetooth.BluetoothPairingDialogService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"/>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/SplashDisplay"
+            android:name="com.rk_itvui.settings.picture.DisplaySettings"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.ashd.settings.files"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity
+            android:theme="@style/MyDialog"
+            android:name="com.rk_itvui.settings.bluetooth.dialog.BluetoothForgetDialog"/>
+        <activity
+            android:theme="@style/Theme.Settings"
+            android:name="com.android.settingslib.system.DevelopmentActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="one">يجب أن تحتوي كلمة المرور على 1 حرف على الأقل</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d أحرف على الأقل</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="one">يجب أن تحتوي كلمة المرور على 1 حرف صغير على الأقل</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d أحرف صغيرة على الأقل</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="one">يجب أن تحتوي كلمة المرور على 1 حرف غير أبجدي على الأقل</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d أحرف غير أبجدية على الأقل</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="one">يجب أن تحتوي كلمة المرور على 1 رقم على الأقل</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d أرقام على الأقل</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="one">يجب أن تحتوي كلمة المرور على 1 رمز خاص على الأقل</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d رموز خاصة على الأقل</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="one">يجب أن تحتوي كلمة المرور على 1 حرف كبير على الأقل</item>
+        <item quantity="other">يجب أن تحتوي كلمة المرور على %d أحرف كبيرة على الأقل</item>
+    </plurals>
+</resources>

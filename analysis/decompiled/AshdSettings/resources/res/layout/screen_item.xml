@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/listview_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ScreenSettingimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="@dimen/setting_list_size"
+            android:gravity="center_vertical"
+            android:id="@+id/ScreenSettingItem"
+            android:paddingLeft="@dimen/setting_list_pad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_weight="2"/>
+        <TextView
+            android:textSize="@dimen/setting_list_size"
+            android:gravity="center"
+            android:id="@+id/ScreenSettingStatus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_weight="2"/>
+    </LinearLayout>
+</LinearLayout>

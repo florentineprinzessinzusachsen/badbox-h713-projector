@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/sound_settings"
+    android:key="sound_settings">
+    <com.rk_itvui.settings.sound.RingerVolumePreference
+        android:persistent="false"
+        android:title="@string/all_volume_title"
+        android:key="ring_volume"
+        android:dialogTitle="@string/all_volume_title"
+        android:streamType="ring"/>
+</PreferenceScreen>

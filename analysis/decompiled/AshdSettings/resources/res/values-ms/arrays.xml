@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="apn_auth_entries">
+        <item>Tiada</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP atau CHAP</item>
+    </array>
+    <array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </array>
+    <array name="app_install_location_entries">
+        <item>Simpanan dalaman</item>
+        <item>Boleh dimuatkan SD Kad</item>
+        <item>Ditentukan oleh sistem</item>
+    </array>
+    <array name="app_ops_categories">
+        <item>Lokasi</item>
+        <item>peribadi</item>
+        <item>Mesej ringkas</item>
+        <item>media</item>
+        <item>peralatan</item>
+    </array>
+    <array name="app_ops_labels">
+        <item>Lokasi</item>
+        <item>Lokasi</item>
+        <item>Lokasi</item>
+        <item>getaran</item>
+        <item>Membaca kenalan</item>
+        <item>Ubah suai orang hubungan</item>
+        <item>Baca rekod panggilan</item>
+        <item>Ubah suai rekod panggilan</item>
+        <item>Membaca kalendar</item>
+        <item>Ubah suai kalendar</item>
+        <item>Lokasi</item>
+        <item>Notis isu</item>
+        <item>Lokasi</item>
+        <item>nombor dail</item>
+        <item>Baca mesej teks/Batu</item>
+        <item>Tulis mesej teks/Batu</item>
+        <item>Terima mesej teks/Batu</item>
+        <item>Terima mesej teks/Batu</item>
+        <item>Terima mesej teks/Batu</item>
+        <item>Terima mesej teks/Batu</item>
+        <item>Menghantar mesej teks/Batu</item>
+        <item>Baca mesej teks/Batu</item>
+        <item>Tulis mesej teks/Batu</item>
+        <item>Ubah suai tetapan</item>
+        <item>Lukis di bahagian atas</item>
+        <item>Lawati notis</item>
+        <item>kamera</item>
+        <item>Rakaman audio</item>
+        <item>Main audio</item>
+        <item>Baca kandungan papan klip</item>
+        <item>Ubah suai kandungan papan klip</item>
+        <item>Butang media</item>
+        <item>Fokus audio</item>
+        <item>Kuantiti utama</item>
+        <item>Jumlah suara</item>
+        <item>Jilid Bell Bunyi</item>
+        <item>Jumlah media</item>
+        <item>Jumlah penggera</item>
+        <item>Jumlah pemberitahuan</item>
+        <item>Kelantangan Bluetooth</item>
+        <item>Tetap bangun -keadaan bangun</item>
+        <item>Lokasi</item>
+        <item>maklumat lokasi</item>
+    </array>
+    <array name="app_ops_summaries">
+        <item>Kedudukan kasar</item>
+        <item>Lokasi yang tepat</item>
+        <item>GPS</item>
+        <item>getaran</item>
+        <item>Membaca kenalan</item>
+        <item>Ubah suai orang hubungan</item>
+        <item>Baca rekod panggilan</item>
+        <item>Ubah suai rekod panggilan</item>
+        <item>Membaca kalendar</item>
+        <item>Ubah suai kalendar</item>
+        <item>WLAN mengimbas</item>
+        <item>memberitahu</item>
+        <item>Pengimbasan rangkaian mudah alih</item>
+        <item>nombor dail</item>
+        <item>Baca mesej teks</item>
+        <item>Tulis mesej teks</item>
+        <item>Terima mesej teks</item>
+        <item>Terima mesej teks kecemasan</item>
+        <item>Terima MMS</item>
+        <item>ambil alih WAP PUSH maklumat</item>
+        <item>Menghantar mesej teks</item>
+        <item>Baca ICC Mesej ringkas</item>
+        <item>Menulis ICC Mesej ringkas</item>
+        <item>Ubah suai tetapan</item>
+        <item>Lukis di bahagian atas</item>
+        <item>Lawati notis</item>
+        <item>kamera</item>
+        <item>Rakaman audio</item>
+        <item>Main audio</item>
+        <item>Baca kandungan papan klip</item>
+        <item>Ubah suai kandungan papan klip</item>
+        <item>Butang media</item>
+        <item>Fokus audio</item>
+        <item>Kuantiti utama</item>
+        <item>Jumlah suara</item>
+        <item>Jilid Bell Bunyi</item>
+        <item>Jumlah media</item>
+        <item>Jumlah penggera</item>
+        <item>Jumlah pemberitahuan</item>
+        <item>Kelantangan Bluetooth</item>
+        <item>Tetap bangun -keadaan bangun</item>
+        <item>Lokasi pemantauan</item>
+        <item>Pengawasan Perkhidmatan Maklumat Lokasi Tinggi Tinggi</item>
+    </array>
+    <array name="app_process_limit_entries">
+        <item>Sekatan standard</item>
+        <item>Tiada proses latar belakang</item>
+        <item>Tidak boleh melebihi 1 Proses</item>
+        <item>Tidak boleh melebihi 2 Proses</item>
+        <item>Tidak boleh melebihi 3 Proses</item>
+        <item>Tidak boleh melebihi 4 Proses</item>
+    </array>
+    <array name="auto_sleep_time">
+        <item>penutupan</item>
+        <item>1minit</item>
+        <item>10minit</item>
+        <item>30minit</item>
+        <item>1Jam</item>
+        <item>3Jam</item>
+        <item>6Jam</item>
+    </array>
+    <array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>tidak ditentukan</item>
+    </array>
+    <array name="bluetooth_visibility_timeout_entries">
+        <item>2 minit</item>
+        <item>5 minit</item>
+        <item>1 Jam</item>
+        <item>Tidak pernah masa</item>
+    </array>
+    <array name="emergency_tone_entries">
+        <item>penutupan</item>
+        <item>penggera</item>
+        <item>getaran</item>
+    </array>
+    <array name="hdcp_checking_summaries">
+        <item>Tidak ada HDCP memeriksa</item>
+        <item>Gunakan sahaja HDCP memeriksa DRM kandungan</item>
+        <item>Gunakan HDCP memeriksa</item>
+    </array>
+    <array name="hdcp_checking_titles">
+        <item>Jangan Periksa</item>
+        <item>Hanya periksa DRM kandungan</item>
+        <item>Sentiasa periksa</item>
+    </array>
+    <array name="long_press_timeout_selector_titles">
+        <item>pendek</item>
+        <item>tengah</item>
+        <item>panjang</item>
+    </array>
+    <array name="settings_items">
+        <item>Rangkaian dan Bluetooth</item>
+        <item>Masa dan tarikh</item>
+        <item>Tetapan bunyi</item>
+        <item>tetapan paparan</item>
+        <item>Kaedah bahasa dan input</item>
+        <item>Maklumat peranti</item>
+        <item>Pengurusan Permohonan</item>
+        <item>Tetapkan semula</item>
+    </array>
+    <array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eropah</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>lautan Pasifik</item>
+        <item>semua</item>
+    </array>
+    <array name="transition_animation_scale_entries">
+        <item>Tutup animasi</item>
+        <item>Animasi 0.5x</item>
+        <item>Animasi 1x</item>
+        <item>Animasi 1.5x</item>
+        <item>Animasi 2x</item>
+        <item>Animasi 5x</item>
+        <item>Animasi 10x</item>
+    </array>
+    <array name="usage_stats_display_order_types">
+        <item>masa penggunaan</item>
+        <item>Pengiraan Operasi</item>
+        <item>Nama aplikasi</item>
+        <item>nama aplikasi</item>
+    </array>
+    <array name="vpn_states">
+        <item>Garis itu terputus</item>
+        <item>memulakan...</item>
+        <item>Menyambung...</item>
+        <item>bersambung</item>
+        <item>masa tamat</item>
+        <item>gagal</item>
+    </array>
+    <array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>Dengan kunci pra L2TP/IPSec VPN</item>
+        <item>Sijil L2TP/IPSec VPN</item>
+        <item>Mempunyai kunci pra dan lakukan Xauth Sahih IPSec VPN</item>
+        <item>Mempunyai sijil dan melakukannya Xauth Sahih IPSec VPN</item>
+        <item>Dengan sijil dan pengesahan identiti hibrid IPSec VPN</item>
+    </array>
+    <array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </array>
+    <array name="wifi_frequency_band_entries">
+        <item>automatik</item>
+        <item>Gunakan sahaja 5 GHz jalur kekerapan</item>
+        <item>Gunakan sahaja 2.4 GHz jalur kekerapan</item>
+    </array>
+    <array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statik</item>
+    </array>
+    <array name="wifi_network_setup">
+        <item>penutupan</item>
+        <item>Butang</item>
+        <item>Dapatkan dari titik akses PIN</item>
+        <item>Sejak itu PIN</item>
+    </array>
+    <array name="wifi_p2p_status">
+        <item>bersambung</item>
+        <item>Jemput</item>
+        <item>gagal</item>
+        <item>Terdapat</item>
+        <item>Luar kawasan</item>
+    </array>
+    <array name="wifi_p2p_wps_setup">
+        <item>Butang</item>
+        <item>Diperoleh dari peralatan mengintip PIN</item>
+        <item>Sejak itu PIN</item>
+    </array>
+    <array name="wifi_phase2_entries">
+        <item>Tiada</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </array>
+    <array name="wifi_proxy_settings">
+        <item>Tiada</item>
+        <item>Secara manual</item>
+    </array>
+    <array name="wifi_signal">
+        <item>lemah</item>
+        <item>secara amnya</item>
+        <item>Kuat</item>
+        <item>berkuasa</item>
+    </array>
+    <array name="wifi_sleep_policy_entries">
+        <item>Selalu</item>
+        <item>Hanya semasa mengecas</item>
+        <item>Tidak pernah（Ia akan meningkatkan trafik data）</item>
+    </array>
+    <array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Selalu</item>
+        <item>Hanya semasa mengecas</item>
+        <item>Tidak pernah</item>
+    </array>
+    <array name="wifi_status">
+        <item />
+        <item>Mengimbas...</item>
+        <item>Menyambung...</item>
+        <item>Pengesahan...</item>
+        <item>mengambil semula IP alamat...</item>
+        <item>bersambung</item>
+        <item>Jeda</item>
+        <item>Buang sambungan...</item>
+        <item>Buang sambungan</item>
+        <item>gagal</item>
+    </array>
+    <array name="wifi_status_with_ssid">
+        <item />
+        <item>Mengimbas...</item>
+        <item>Disambungkan ke %1$s...</item>
+        <item>Lulus %1$s Pengesahan...</item>
+        <item>Menjadi %1$s Memperoleh IP alamat...</item>
+        <item>Bersambung %1$s</item>
+        <item>Jeda</item>
+        <item>Pecah dan terputus %1$s Sambungan...</item>
+        <item>Buang sambungan</item>
+        <item>gagal</item>
+    </array>
+    <array name="window_animation_scale_entries">
+        <item>Tutup animasi</item>
+        <item>Animasi 0.5x</item>
+        <item>Animasi 1x</item>
+        <item>Animasi 1.5x</item>
+        <item>Animasi 2x</item>
+        <item>Animasi 5x</item>
+        <item>Animasi 10x</item>
+    </array>
+</resources>

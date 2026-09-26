@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/content_fragment"
+        android:clipChildren="true"
+        android:layout_width="@dimen/lb_content_section_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"/>
+    <FrameLayout
+        android:id="@+id/action_fragment"
+        android:background="@color/lb_action_fragment_background"
+        android:clipChildren="true"
+        android:layout_width="@dimen/lb_action_section_width"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/content_fragment"/>
+</RelativeLayout>

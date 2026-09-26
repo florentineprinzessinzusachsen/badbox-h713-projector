@@ -464,12 +464,11 @@ find . -type f -exec shasum -a 256 {} + > ../SHA256SUMS
 
 ```
 # System apps (UID 1000): cannot be deleted from /system without a firmware rebuild.
-# Stop, disable, wipe data, uninstall for user 0 -> gone for the running system, survives reboots.
+# Stop, disable, wipe data for user 0 -> inert for the running system, survives reboots.
 for p in com.android.umanalytics.yiyou com.android.sysapp com.cloudmedia.testapk; do
   adb shell am force-stop $p
   adb shell pm disable-user --user 0 $p
   adb shell pm clear $p
-  adb shell pm uninstall --user 0 $p
 done
 
 adb shell pm uninstall com.google.adtest
@@ -488,6 +487,15 @@ adb reboot
 - `qw` (su daemon, only removable by editing `/system`, reachable locally only)
 - harmless OEM apps: `appsdisable`, `gmsopt`, `systemmixservice`
 - `com.android.nfx` (Netflix remote-control helper)
+
+**Anti tamper check**
+
+Uninstalling yiyou breaks Settings. `com.ashd.settings`'s `checkSHA1()` has two checks:
+
+1. Settings' own signing cert, requiring a match against one of five hardcoded SHA1s (`CD:B1:B7:56:85:FE:16:C2:7E:4C:45:59:54:43:AC:B0:1F:68:40:91`, `60:35:FD:9E:68:E9:20:C2:B5:B0:7C:F2:B5:10:F2:83:47:06:DE:15`, `6E:40:BA:7F:F7:90:7D:40:C2:F1:6D:12:E4:63:E5:E4:A3:F1:5A:01`, `27:19:6E:38:6B:87:5E:76:AD:F7:00:E7:EA:84:E4:C6:EE:E3:3D:FA`, `F6:08:8C:ED:B9:9A:EC:82:A7:7D:F3:F9:01:97:06:BE:C0:65:E4:9A`)
+2. Check whether `com.android.umanalytics.yiyou`, (or `com.android.umanalytics.kege`, likely the dropper's name on a other firmware builds), is registered for user 0.
+
+Both failure paths log `签名校验失败，关闭应用` ("signature check failed, closing app"). Fully uninstalling yiyou (rather than just disabling it, as above) trips this. `adb shell pm install-existing com.android.umanalytics.yiyou` restores the registration without re-enabling it.
 
 ### 8.3. Confirmation
 
@@ -835,3 +843,10 @@ Read-only reachability check from an independent host (no proxy protocol/payload
 | `ulogs.umeng.com`, `ulogs.umengcloud.com`, `alogus.umeng.com`, `alogsus.umeng.com`, `ouplog.umeng.com`, `plbslog.umeng.com` | yiyou (Umeng SDK)                         | third-party analytics telemetry, carrying the device fingerprints (serial, MACs, SSID/BSSID) yiyou app collects                |
 | `hmma.baidu.com`, `datax.baidu.com`, `dxp.baidu.com`, `openrcv.baidu.com`                                                   | yiyou (Baidu Mobile Stats SDK)            | same telemetry role, via Baidu                                                                                                 |
 | `cmnsguider.yunos.com`, `ip.taobao.com`, `g3.le.com`                                                                        | yiyou                                     | Alibaba/Yunos device-token and public-IP lookup services used for fingerprinting                                               |
+
+## 11. Other
+
+Developer options:
+
+1. `Deviceversion.onKeyDown` (Settings' "Device info" screen) watches for a Konami style code, Up Up Down Down Left Left Right Right Center Center, which opens the real developer options.
+2. Up Down Left Right Center tries to launch `com.konka.readmain.MainActivity`, an unrelated OEM factory-test app that isn't actually installed on this unit.

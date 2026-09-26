@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_list_height">108dp</dimen>
+    <dimen name="setting_list_pad">30dp</dimen>
+    <dimen name="upgrade_list_margin">42dp</dimen>
+    <dimen name="viewpager_bottom">15px</dimen>
+    <dimen name="viewpager_h">800px</dimen>
+    <dimen name="viewpager_icon_h">92px</dimen>
+    <dimen name="viewpager_icon_textsize">30px</dimen>
+    <dimen name="viewpager_item_h">388px</dimen>
+    <dimen name="viewpager_item_icon">112px</dimen>
+    <dimen name="viewpager_item_icon_left">3px</dimen>
+    <dimen name="viewpager_item_icon_top">6px</dimen>
+    <dimen name="viewpager_item_padding">10px</dimen>
+    <dimen name="viewpager_item_padding_lr">10px</dimen>
+    <dimen name="viewpager_item_padding_lr1">40px</dimen>
+    <dimen name="viewpager_item_text_bottom">7px</dimen>
+    <dimen name="viewpager_item_text_w">315px</dimen>
+    <dimen name="viewpager_item_textsize">45px</dimen>
+    <dimen name="viewpager_item_w">289px</dimen>
+    <dimen name="viewpager_left">30px</dimen>
+    <dimen name="viewpager_w">1620px</dimen>
+</resources>
