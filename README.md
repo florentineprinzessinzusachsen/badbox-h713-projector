@@ -34,7 +34,7 @@ adb shell getprop ro.build.type        # user    <- release build
 
 ## 2. Get in
 
-ADB is listening on the network, on a non-standard port, with no authorisation prompt and root rights. (The Developer options screen is hidden and the activity crashes when launched manually)
+ADB is listening on the network, on a non-standard port, with no authorisation prompt and root rights.
 
 ```
 # 1. Find open ports (projector on an isolated network)
@@ -52,9 +52,7 @@ adb root
 adb shell id                   # uid=0(root)
 ```
 
-### Lamp off while working over ADB
-
-Long dumps and analysis runs do not need the picture. Hold a kernel wakelock, then put the display to sleep: the LED lamp goes off, CPU, Wi-Fi and ADB stay up.
+### Turn lamp off while working over ADB
 
 ```
 adb shell 'echo adb_keepalive > /sys/power/wake_lock'    # keep CPU/Wi-Fi awake (needs root adbd)
@@ -66,7 +64,7 @@ adb shell input keyevent KEYCODE_WAKEUP                  # lamp on
 adb shell 'echo adb_keepalive > /sys/power/wake_unlock'  # release the wakelock
 ```
 
-Why not a direct switch: `/sys/class/backlight/tv` is a placeholder on the graphics engine (`brightness`/`bl_power` have no effect). The real lamp enable (`gpio-37`, `blgpio`) and dimming PWM (`2000c00.pwm` pwm-0) are claimed by kernel drivers and driven by `tvserver` through `/dev/hidtvreg`. Do not write to `s_pwm` pwm-1: it is the CPU core voltage (`vdd-cpu`).
+`/sys/class/backlight/tv` > `brightness`/`bl_power` have no effect.
 
 ## 3. Infection chain
 
@@ -156,7 +154,7 @@ session_recent_visit: [{"day":20251208,"count":1}, {"day":20260910,...}, ...]
 1765179258896  ->  2025-12-08 07:34 UTC  =  15:34 CST, ~7 min after the kernel build
 ```
 
-### **f) Malware sits in the vendor-signed, read-only system image**
+### **f) Malware in the vendor-signed, read-only system image**
 
 A user or a later app can't put files into `/system`. It's part of `super`, protected by dm-verity and signed through `vbmeta`.
 
