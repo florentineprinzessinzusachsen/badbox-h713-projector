@@ -278,7 +278,7 @@ Network indicators (domains, URLs, IPs) are in [section 11](#11-consolidated-hos
 | `com.google.adtest` (real name `com.fotas.wanapp`, "com.speed") | `/data/app`                                             | second loader                                                    |
 | `com.cloudmedia.testapk`                                        | `/system/app`                                           | OEM factory test app, removed alongside the dropper in section 8 |
 | `com.disney.disneyplus`                                         | `/data/app`                                             | cover app installed by the dropper                               |
-| `com.android.nfx`                                               | `/system/priv-app/NFXAccessibility`                     | kept, harmless (Netflix remote-control helper)         |
+| `com.android.nfx`                                               | `/system/priv-app/NFXAccessibility`                     | kept, harmless (Netflix remote-control helper)                   |
 
 ### 6.2.Binaries
 
@@ -527,6 +527,24 @@ adb shell getprop ro.boot.vbmeta.device_state   # locked
 adb shell getprop ro.boot.verifiedbootstate     # (empty)
 adb shell df -h /system                         # 1.1G 1.1G 3.4M 100%
 ```
+
+### 8.5. Bloatware
+
+```
+adb shell pm disable-user --user 0 com.android.toofifi
+adb shell pm disable-user --user 0 com.toofifi.lineserver
+adb shell pm disable-user --user 0 com.toofifi.miracast
+adb shell pm disable-user --user 0 com.mphotool.usbcastserver
+adb shell pm disable-user --user 0 com.rockchip.devicetest
+```
+
+Reverse with `pm enable --user 0 <package>`
+
+- `com.android.toofifi`: core screencast service. You lose screen mirroring (Miracast/AirPlay-style casting) from phones and laptops.
+- `com.toofifi.lineserver`: wired/USB display server for the same stack, phones home to `server.mphotool.com:8680` for license checks. You lose wired display mode.
+- `com.toofifi.miracast`: wireless Miracast receiver, calls `server.mphotool.com:8680/MPAPI/System/CheckUpdate` and uploads usage logs to `mphotool.com/FeituAppLogMgr`. You lose wireless casting.
+- `com.mphotool.usbcastserver`: USB cast server, same vendor. You lose USB cast-from-device support.
+- `com.rockchip.devicetest`: No reason to be on an Allwinner unit.
 
 ## 9. Full component map
 
@@ -778,9 +796,9 @@ Read-only reachability check from an independent host (no proxy protocol/payload
 | `api.kookjar.com`                                                                                   | resolves (Cloudflare, 172.67.159.65), HTTP 204                               | alive                                                                         |
 | `152.32.240.141` (SKN0041 debug fallback)                                                           | TCP/80 timeout                                                               | not reachable; debug-only path anyway, production uses `api.kookjar.com`      |
 | `dporder.midrouterx.com`                                                                            | resolves direct (43.174.196.241, Tencent Cloud), HTTP 200 on `/api/dispatch` | **alive**                                                                     |
-| `seed-info.oss-ap-southeast-1.aliyuncs.com`                                                         | resolves (47.79.49.170, Alibaba Cloud SG), HTTP 200, serves `favorite.ico`   | **alive**                                      |
+| `seed-info.oss-ap-southeast-1.aliyuncs.com`                                                         | resolves (47.79.49.170, Alibaba Cloud SG), HTTP 200, serves `favorite.ico`   | **alive**                                                                     |
 | `hgsdkszns.com`                                                                                     | resolves (Cloudflare)                                                        | DNS alive; plain HTTPS probe reset (unused branch in current build, see 10.5) |
-| `43.173.127.241:9090`                                                                               | **raw TCP connect succeeds**                                                 | **alive, listening right now**                                             |
+| `43.173.127.241:9090`                                                                               | **raw TCP connect succeeds**                                                 | **alive, listening right now**                                                |
 | `api.eviceh.cc:16000`                                                                               | resolves (152.53.83.204)                                                     | DNS alive, TCP/16000 refused at check time (gateway not currently listening)  |
 | `dw4y.mmavlino.com` / `zx8c.llvyomi.net` / `zxn5.p2f7mjhv.eu.cc` / `45.43.57.99` / `165.154.135.52` | not re-checked this pass                                                     | see section 11                                                                |
 | `api.pechlo.cc`, `api.logobi.cc`                                                                    | resolve (Cloudflare), HTTP 404 on `/`                                        | alive                                                                         |
