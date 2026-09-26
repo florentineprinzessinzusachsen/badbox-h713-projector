@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="@string/lib_autorun_sync_account_type"
+    android:contentAuthority="@string/lib_autorun_sync_authority"
+    android:userVisible="false"
+    android:supportsUploading="false"
+    android:allowParallelSyncs="false"
+    android:isAlwaysSyncable="true"/>

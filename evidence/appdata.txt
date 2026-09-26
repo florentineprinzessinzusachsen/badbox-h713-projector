@@ -1,0 +1,205 @@
+/data/data/com.android.sysapp:
+total 20
+drwx------   5 system system 3452 2026-09-26 03:16 .
+drwxrwx--x 117 system system 8192 2026-09-26 04:27 ..
+drwxrws--x   2 system system 3452 2026-03-03 04:48 cache
+drwxrws--x   2 system system 3452 2026-03-03 04:48 code_cache
+lrwxrwxrwx   1 root   root     35 2026-09-26 03:16 lib -> /system/priv-app/AshdSysApp/lib/arm
+drwxrwx--x   2 system system 3452 2026-09-26 03:16 shared_prefs
+
+/data/data/com.android.sysapp/cache:
+total 6
+drwxrws--x 2 system system 3452 2026-03-03 04:48 .
+drwx------ 5 system system 3452 2026-09-26 03:16 ..
+
+/data/data/com.android.sysapp/code_cache:
+total 6
+drwxrws--x 2 system system 3452 2026-03-03 04:48 .
+drwx------ 5 system system 3452 2026-09-26 03:16 ..
+
+/data/data/com.android.sysapp/shared_prefs:
+total 6
+drwxrwx--x 2 system system 3452 2026-09-26 03:16 .
+drwx------ 5 system system 3452 2026-09-26 03:16 ..
+-rw-rw---- 1 system system  244 2026-09-26 03:16 SHARE.xml
+
+/data/data/com.android.umanalytics.yiyou:
+total 29
+drwxrwxrwx   8 system system 3452 2026-09-26 03:16 .
+drwxrwx--x 117 system system 8192 2026-09-26 04:27 ..
+drwxrwx--x   2 system system 3452 2026-03-03 04:50 app_dex
+drwxrws--x   3 system system 3452 2026-09-10 02:10 cache
+drwxrws--x   3 system system 3452 2026-07-22 03:28 code_cache
+drwxrwx--x   2 system system 3452 2026-03-03 04:49 databases
+drwxrwxrwx   6 system system 3452 2026-09-26 03:16 files
+lrwxrwxrwx   1 root   root     42 2026-09-26 03:16 lib -> /system/app/AndroidAnalytics_yiyou/lib/arm
+drwxrwx--x   2 system system 3452 2026-09-26 04:24 shared_prefs
+
+/data/data/com.android.umanalytics.yiyou/app_dex:
+total 6
+drwxrwx--x 2 system system 3452 2026-03-03 04:50 .
+drwxrwxrwx 8 system system 3452 2026-09-26 03:16 ..
+
+/data/data/com.android.umanalytics.yiyou/cache:
+total 401
+drwxrws--x 3 system system   3452 2026-09-10 02:10 .
+drwxrwxrwx 8 system system   3452 2026-09-26 03:16 ..
+drwx--S--- 2 system system   3452 2026-03-03 04:50 oat
+-rw------- 1 system system 398664 2026-09-10 02:10 plugin.jar
+
+/data/data/com.android.umanalytics.yiyou/cache/oat:
+total 6
+drwx--S--- 2 system system 3452 2026-03-03 04:50 .
+drwxrws--x 3 system system 3452 2026-09-10 02:10 ..
+-rw------- 1 system system  278 2026-09-13 00:45 plugin.jar.cur.prof
+
+/data/data/com.android.umanalytics.yiyou/code_cache:
+total 9
+drwxrws--x 3 system system 3452 2026-07-22 03:28 .
+drwxrwxrwx 8 system system 3452 2026-09-26 03:16 ..
+drwx--S--- 3 system system 3452 2026-07-22 03:28 .hs
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs:
+total 9
+drwx--S--- 3 system system 3452 2026-07-22 03:28 .
+drwxrws--x 3 system system 3452 2026-07-22 03:28 ..
+drwx--S--- 4 system system 3452 2026-09-26 03:35 .file
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file:
+total 12
+drwx--S--- 4 system system 3452 2026-09-26 03:35 .
+drwx--S--- 3 system system 3452 2026-07-22 03:28 ..
+drwx--S--- 2 system system 3452 2026-09-24 23:31 .rf
+drwx--S--- 4 system system 3452 2026-09-26 03:35 .wf
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.rf:
+total 234
+-rw------- 1 system system 47425 2026-07-22 03:28 -1.dex_assdk_huang_1777280801104_SKN0041_REDACTED-ANDROID-ID_1784662107137.rf
+-rw------- 1 system system 55902 2026-07-22 03:28 -1.dex_assdk_huang_1777280801104_SKN0054_REDACTED-ANDROID-ID_1784662107137.rf
+-rw------- 1 system system 44365 2026-07-22 03:28 -1.dex_assdk_huang_1777280801104_SKN0058_REDACTED-ANDROID-ID_1784662107137.rf
+-rw------- 1 system system 80974 2026-07-22 03:28 -1.dex_assdk_huang_1777280801104_SKN0061_REDACTED-ANDROID-ID_1784662107137.rf
+drwx--S--- 2 system system  3452 2026-09-24 23:31 .
+drwx--S--- 4 system system  3452 2026-09-26 03:35 ..
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf:
+total 12
+drwx--S--- 4 system system 3452 2026-09-26 03:35 .
+drwx--S--- 4 system system 3452 2026-09-26 03:35 ..
+drwx--S--- 6 system system 3452 2026-09-26 03:35 .opt
+drwx--S--- 2 system system 3452 2026-09-26 03:35 oat
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf/.opt:
+total 18
+drwx--S--- 6 system system 3452 2026-09-26 03:35 .
+drwx--S--- 4 system system 3452 2026-09-26 03:35 ..
+drwx--S--- 2 system system 3452 2026-09-26 03:35 1790364945507
+drwx--S--- 2 system system 3452 2026-09-26 03:35 1790364945572
+drwx--S--- 2 system system 3452 2026-09-26 03:35 1790364945657
+drwx--S--- 2 system system 3452 2026-09-26 03:35 1790364945710
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf/.opt/1790364945507:
+total 6
+drwx--S--- 2 system system 3452 2026-09-26 03:35 .
+drwx--S--- 6 system system 3452 2026-09-26 03:35 ..
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf/.opt/1790364945572:
+total 6
+drwx--S--- 2 system system 3452 2026-09-26 03:35 .
+drwx--S--- 6 system system 3452 2026-09-26 03:35 ..
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf/.opt/1790364945657:
+total 6
+drwx--S--- 2 system system 3452 2026-09-26 03:35 .
+drwx--S--- 6 system system 3452 2026-09-26 03:35 ..
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf/.opt/1790364945710:
+total 6
+drwx--S--- 2 system system 3452 2026-09-26 03:35 .
+drwx--S--- 6 system system 3452 2026-09-26 03:35 ..
+
+/data/data/com.android.umanalytics.yiyou/code_cache/.hs/.file/.wf/oat:
+total 8
+-rw------- 1 system system  248 2026-09-26 04:00 -1.dex_assdk_huang_1777280801104_SKN0041_REDACTED-ANDROID-ID_1784662107137.rf.dex.cur.prof
+-rw------- 1 system system  521 2026-09-26 04:16 -1.dex_assdk_huang_1777280801104_SKN0054_REDACTED-ANDROID-ID_1784662107137.rf.dex.cur.prof
+-rw------- 1 system system  195 2026-09-26 04:19 -1.dex_assdk_huang_1777280801104_SKN0058_REDACTED-ANDROID-ID_1784662107137.rf.dex.cur.prof
+-rw------- 1 system system  556 2026-09-26 04:00 -1.dex_assdk_huang_1777280801104_SKN0061_REDACTED-ANDROID-ID_1784662107137.rf.dex.cur.prof
+drwx--S--- 2 system system 3452 2026-09-26 03:35 .
+drwx--S--- 4 system system 3452 2026-09-26 03:35 ..
+
+/data/data/com.android.umanalytics.yiyou/databases:
+total 46
+drwxrwx--x 2 system system  3452 2026-03-03 04:49 .
+drwxrwxrwx 8 system system  3452 2026-09-26 03:16 ..
+-rw-rw---- 1 system system 40960 2026-09-26 03:16 ua.db
+-rw------- 1 system system     0 2026-03-03 04:49 ua.db-journal
+
+/data/data/com.android.umanalytics.yiyou/files:
+total 23
+drwxrwxrwx 6 system system 3452 2026-09-26 03:16 .
+drwxrwxrwx 8 system system 3452 2026-09-26 03:16 ..
+drwx------ 2 system system 3452 2026-09-25 15:14 .envelope
+-rw------- 1 system system  961 2026-09-25 15:14 .imprint
+-rw------- 1 system system   32 2026-07-22 03:28 .stub_callback_id
+drwx------ 2 system system 3452 2026-03-03 04:50 .umeng
+-rw------- 1 system system 1065 2026-09-25 00:19 09-25 00-19-06.txt
+-rw-rw---- 1 system system    2 2026-09-26 03:16 __local_ap_info_cache.json
+-rw-rw---- 1 system system    2 2026-09-26 03:16 __local_last_session.json
+-rw-rw---- 1 system system  806 2026-09-26 03:16 __local_stat_cache.json
+-rw-rw---- 1 system system 1136 2026-09-26 03:16 __send_data_1790363804710
+-rw-rw---- 1 system system 1233 2026-09-26 03:16 __send_data_1790363811096
+drwxrwxrwx 2 system system 3452 2026-09-10 02:11 apps
+-rw------- 1 system system  104 2026-09-25 15:14 exid.dat
+-rw-rw-r-- 1 system system  109 2026-03-03 04:49 libcuid.so
+drwx------ 3 system system 3452 2026-03-03 04:49 stateless
+-rw------- 1 system system  215 2026-09-10 02:11 umeng_it.cache
+
+/data/data/com.android.umanalytics.yiyou/files/.envelope:
+total 6
+drwx------ 2 system system 3452 2026-09-25 15:14 .
+drwxrwxrwx 6 system system 3452 2026-09-26 03:16 ..
+
+/data/data/com.android.umanalytics.yiyou/files/.umeng:
+total 6
+drwx------ 2 system system 3452 2026-03-03 04:50 .
+drwxrwxrwx 6 system system 3452 2026-09-26 03:16 ..
+-rw------- 1 system system  206 2026-09-25 15:14 exchangeIdentity.json
+
+/data/data/com.android.umanalytics.yiyou/files/apps:
+total 698
+drwxrwxrwx 2 system system   3452 2026-09-10 02:11 .
+drwxrwxrwx 6 system system   3452 2026-09-26 03:16 ..
+-rwxrwxrwx 1 system system 705552 2026-09-10 02:11 com.google.adtest.apk
+
+/data/data/com.android.umanalytics.yiyou/files/stateless:
+total 9
+drwx------ 3 system system 3452 2026-03-03 04:49 .
+drwxrwxrwx 6 system system 3452 2026-09-26 03:16 ..
+drwx------ 2 system system 3452 2026-09-26 03:35 dW1weF9pbnRlcm5hbA==
+
+
+/data/data/com.android.umanalytics.yiyou/files/stateless/dW1weF9pbnRlcm5hbA==
+:
+total 6
+drwx------ 2 system system 3452 2026-09-26 03:35 .
+drwx------ 3 system system 3452 2026-03-03 04:49 ..
+
+/data/data/com.android.umanalytics.yiyou/shared_prefs:
+total 18
+drwxrwx--x 2 system system 3452 2026-09-26 04:24 .
+drwxrwxrwx 8 system system 3452 2026-09-26 03:16 ..
+-rw-rw---- 1 system system  165 2026-09-10 02:19 Plugin.xml
+-rw-rw---- 1 system system  201 2026-03-03 04:49 UM_PROBE_DATA.xml
+-rw-rw---- 1 system system  502 2026-09-26 03:16 __Baidu_Stat_SDK_SendRem.xml
+-rw-rw---- 1 system system  125 2026-07-22 03:28 app_prefs.xml
+-rw-rw---- 1 system system  611 2026-09-26 03:16 baidu_mtj_sdk_record.xml
+-rw-rw---- 1 system system  145 2026-07-22 03:28 device_id.xml.xml
+-rw-rw---- 1 system system  150 2026-07-22 03:28 hs.cuid.v1.xml
+-rw-rw---- 1 system system  573 2026-09-26 03:35 hs.prefs_1.xml
+-rw-rw---- 1 system system 5177 2026-09-26 03:16 info.xml
+-rw-rw---- 1 system system  138 2026-07-22 03:28 persistvendor.xml
+-rw-rw---- 1 system system  791 2026-09-26 04:24 spUtils.xml
+-rw-rw---- 1 system system  236 2026-09-26 03:16 um_pri.xml
+-rw-rw---- 1 system system  367 2026-03-03 04:49 umeng_common_config.xml
+-rw-rw---- 1 system system  119 2026-03-03 04:50 umeng_common_location.xml
+-rw-rw---- 1 system system 1522 2026-09-26 03:16 umeng_general_config.xml
+-rw-rw---- 1 system system  148 2026-07-22 03:28 vps_sdk_prefs.xml

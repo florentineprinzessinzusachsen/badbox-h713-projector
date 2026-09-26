@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="download_position" value="0" />
+    <int name="app_mode" value="1" />
+    <long name="download_size" value="0" />
+    <string name="update_log">null</string>
+</map>

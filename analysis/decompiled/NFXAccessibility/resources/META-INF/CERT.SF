@@ -1,0 +1,20 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA-256-Digest-Manifest: MVm66u+wMI/uGmUI1nMfcDqYLp0iXf44ARO+8bX7b0k=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: bwS7Z0l3Rko2Df5klamSCnDfug8fpXU9aoBBO6vcrz4=
+
+Name: META-INF/proguard/androidx-annotations.pro
+SHA-256-Digest: z4VPeB3xyX+1oqubmSAZIacjNrmoTsLyFuu+ubl7+m4=
+
+Name: classes.dex
+SHA-256-Digest: i5XfXOXMv5HdUwQp34CCZeE3om5WzERbYwL8GmW3ZxI=
+
+Name: res/xml/accessibility.xml
+SHA-256-Digest: 8zqGAc1furkkIw39V3GJBZszzxE9bCGFbkaA8Aj4Ezk=
+
+Name: resources.arsc
+SHA-256-Digest: 9+laGwTGrmCTqnFhu2zc0qlYfBMFi+jCcs7hFL/XwJI=
+

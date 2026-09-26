@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">WanApp</string>
+    <string name="lib_autorun_keepalive_notification_channel">System service</string>
+    <string name="lib_autorun_keepalive_notification_text">Service running</string>
+    <string name="lib_autorun_keepalive_notification_title">System service</string>
+    <string name="lib_autorun_notification_channel_backup">Backup service notification</string>
+    <string name="lib_autorun_notification_title_backup">Backup service running</string>
+    <string name="lib_autorun_runtime_notification_channel">Background service</string>
+    <string name="lib_autorun_runtime_notification_text">Service is running in the background</string>
+    <string name="lib_autorun_runtime_notification_title">Background service</string>
+    <string name="lib_autorun_sync_account_type">com.google.adtest.sync.account</string>
+    <string name="lib_autorun_sync_authority">com.google.adtest.sync.provider</string>
+    <string name="lib_autorun_sync_label">System Sync</string>
+</resources>

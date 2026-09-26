@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="_dsk_s">mmcblk</string>
+    <string name="_thm_z">thermal_zone</string>
+    <string name="_gdf_r">noper</string>
+</map>

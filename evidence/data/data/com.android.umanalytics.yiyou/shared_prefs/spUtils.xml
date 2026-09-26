@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="updateInfo">{&quot;MD5&quot;:&quot;B0FEE075841BBC6BCF5BF65A0825360F&quot;,&quot;action&quot;:&quot;update&quot;,&quot;apkName&quot;:&quot;coolys.apk&quot;,&quot;date&quot;:20191211,&quot;description&quot;:&quot;1、优化网络访问\n2、增加相关影片推荐。&quot;,&quot;deviceCode&quot;:&quot;ALL&quot;,&quot;downLoadURL&quot;:&quot;http://ty.ishanghd.com/work/app/AndroidAnalytics-test-release-v1.0.1-c101-20191217-143357.apk&quot;,&quot;force&quot;:false,&quot;packageName&quot;:&quot;com.android.umanalytics&quot;,&quot;title&quot;:&quot;mg主界面1.1.0升级&quot;,&quot;versionCode&quot;:100,&quot;versionName&quot;:&quot;1.0.0&quot;}</string>
+    <int name="useTimeCount" value="403" />
+</map>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_icon"
+        android:layout_centerVertical="true"/>
+    <com.android.shared.AutoMarqueeTextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:ellipsize="marquee"
+        android:id="@+id/file_name"
+        android:paddingLeft="@dimen/dp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/dp_160"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/image"
+        android:layout_centerVertical="true"
+        android:marqueeRepeatLimit="marquee_forever"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/sp_11"
+        android:textColor="@android:color/white"
+        android:id="@+id/file_size"
+        android:paddingRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

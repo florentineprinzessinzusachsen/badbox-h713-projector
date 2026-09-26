@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="session_today_visit_count">20260926:2</string>
+    <string name="session_recent_visit">[{&quot;day&quot;:20251208,&quot;count&quot;:1},{&quot;day&quot;:20260910,&quot;count&quot;:5},{&quot;day&quot;:20260912,&quot;count&quot;:3},{&quot;day&quot;:20260924,&quot;count&quot;:3},{&quot;day&quot;:20260925,&quot;count&quot;:10}]</string>
+    <long name="session_first_visit_time" value="1772484548562" />
+    <long name="session_last_visit_time" value="1790363810338" />
+    <long name="session_visit_interval" value="8457" />
+</map>

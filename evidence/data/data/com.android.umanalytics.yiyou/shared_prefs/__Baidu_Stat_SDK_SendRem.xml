@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="setchannelwithcode" value="true" />
+    <string name="device_id_1">REDACTED-DEVICE-ID</string>
+    <string name="encrypt_device_id">REDACTED-ENCRYPTED-DEVICE-ID</string>
+    <string name="mtjsdkmacss2_1">REDACTED-ENCRYPTED-MAC</string>
+    <string name="setchannelwithcodevalue">ashd-analytics</string>
+    <string name="last_custom_userid"></string>
+    <boolean name="onlywifi" value="false" />
+</map>

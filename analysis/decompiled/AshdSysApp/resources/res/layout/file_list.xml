@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/local_file_list_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:layout_marginStart="@dimen/dp_125"
+    android:layout_marginEnd="@dimen/dp_125">
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/local_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/local_name"
+        android:singleLine="true"/>
+    <ListView
+        android:layout_gravity="center"
+        android:id="@+id/file_list"
+        android:paddingTop="@dimen/dp_25"
+        android:paddingBottom="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/file_list_selector"
+        android:paddingStart="@dimen/dp_25"
+        android:paddingEnd="@dimen/dp_25"/>
+</LinearLayout>

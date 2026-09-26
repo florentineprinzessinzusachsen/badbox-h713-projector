@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lib_autorun_keepalive_notification_channel">系统服务</string>
+    <string name="lib_autorun_keepalive_notification_text">服务运行中</string>
+    <string name="lib_autorun_keepalive_notification_title">系统服务</string>
+    <string name="lib_autorun_notification_channel_backup">备份服务通知</string>
+    <string name="lib_autorun_notification_title_backup">备份服务运行中</string>
+    <string name="lib_autorun_runtime_notification_channel">后台服务</string>
+    <string name="lib_autorun_runtime_notification_text">服务正在后台运行</string>
+    <string name="lib_autorun_runtime_notification_title">后台服务</string>
+    <string name="lib_autorun_sync_label">系统同步</string>
+</resources>

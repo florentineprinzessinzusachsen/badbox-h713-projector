@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="a_start_time" value="1790363802757" />
+    <int name="last_request_spent_ms" value="427" />
+    <string name="signature">1ef834f2eb358c33e93dab1ec1a82efd41d5be29b9b3db4dd18884dc62d4a569</string>
+    <string name="pre_date">2026-09-26</string>
+    <long name="session_start_time" value="1790363802323" />
+    <long name="dstk_last_time" value="1790363802297" />
+    <long name="last_request_time" value="1790320186330" />
+    <long name="session_end_time" value="1790363802478" />
+    <int name="failed_requests " value="0" />
+    <int name="dstk_cnt" value="0" />
+    <string name="cur_version">1.1.0</string>
+    <int name="versioncode" value="110" />
+    <long name="a_end_time" value="1790363802478" />
+    <int name="gkvc" value="0" />
+    <string name="pre_session_id">BBC31C3E467BEF1647415C81CF8D6680</string>
+    <long name="last_instant_build_time" value="1790320185794" />
+    <string name="session_id">1DE488A7A3FC788F53CE2E4723D4885C</string>
+    <long name="ana_is_f" value="0" />
+    <long name="thtstart" value="1790363802297" />
+    <int name="successful_request" value="218" />
+    <int name="serial" value="219" />
+    <long name="first_activate_time" value="1772484549249" />
+    <string name="pre_version">0</string>
+    <int name="ekvc" value="2" />
+    <string name="versionname">1.1.0</string>
+    <long name="last_req" value="1790320465333" />
+    <long name="last_successful_build_time" value="1790320186174" />
+</map>

@@ -1,0 +1,183 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: JU13UOv5O71PGslzDs7sYEgSPVSWg1ND8aOeOiRMGiI=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA-256-Digest: 4VytlRWkNqBmUGMq1bRlzDF4ZuS7QznqOVB+qdsVCR8=
+
+Name: DebugProbesKt.bin
+SHA-256-Digest: J5JwGqN5sZzpUMmX6fGo7x3RaJgYMZDYkkXqeCjUMyg=
+
+Name: META-INF/androidx.annotation_annotation-experimental.version
+SHA-256-Digest: Vj2iwJvYfJ0r8T15iiytHU8+f2cYSF+FDx3SbArSMBs=
+
+Name: META-INF/androidx.arch.core_core-runtime.version
+SHA-256-Digest: Xk4gTfXbSoRbgEIAb7dJD1H+qZ+KHFOrQAuZz81pi5U=
+
+Name: META-INF/androidx.core_core-viewtree.version
+SHA-256-Digest: 6OQiVV41hlBy+db5UdxWj+aKQeZW+trFrqyApqP16BM=
+
+Name: META-INF/androidx.core_core.version
+SHA-256-Digest: Uj/GtnV1asJuLl5XhZR3+VZb3GZW4GdWYH+YtoqaT58=
+
+Name: META-INF/androidx.interpolator_interpolator.version
+SHA-256-Digest: cXcB/K2AKR4NBsyLxMJm/YrOYXNSLW1iPNN+HpKtyZ4=
+
+Name: META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version
+SHA-256-Digest: Utvw3p68ynVnRc5nmsf1w9/CGr6a+X6Mg2EL76DBL5k=
+
+Name: META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+SHA-256-Digest: bQCk4W4b2Y7M4UqcOTR8zL8w1P0BhChpX3fFrX6wnBQ=
+
+Name: META-INF/androidx.lifecycle_lifecycle-livedata.version
+SHA-256-Digest: 05zS2PzRDFSHY4wDECpm8se+41cUtLoqxj2ypDVTBNY=
+
+Name: META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version
+SHA-256-Digest: qNkRFijhFSOTXnWX/bUBNa60AoZ4W0DNx7Y+hV9EEJU=
+
+Name: META-INF/androidx.lifecycle_lifecycle-runtime.version
+SHA-256-Digest: QhVLsxnwVaJ9XHQdgU7w5lyjD3ZD+6t1hJolvpWDjiY=
+
+Name: META-INF/androidx.lifecycle_lifecycle-service.version
+SHA-256-Digest: fW6cjpVat9erX5miknclz0Qj3U6/iGZvJBfkle5umh0=
+
+Name: META-INF/androidx.profileinstaller_profileinstaller.version
+SHA-256-Digest: Ei1kNkN8l8rFnPC7Qk/UeY7PBkj+VcheDPr0S3PWRiY=
+
+Name: META-INF/androidx.room_room-runtime.version
+SHA-256-Digest: Y+y+co0gS47i+6xqMYzl+dCbouZu+ICGr0yCCRSz53Y=
+
+Name: META-INF/androidx.sqlite_sqlite-framework.version
+SHA-256-Digest: jV9ScOq2uJWBVcOB4PNMigso9UXU6aCaN7NZ40lNX98=
+
+Name: META-INF/androidx.sqlite_sqlite.version
+SHA-256-Digest: ozSgITJ5UaHg6Ep8QB7NJw0twDBaDB/dIe+ssMcGGaM=
+
+Name: META-INF/androidx.startup_startup-runtime.version
+SHA-256-Digest: O/ZQCUXmbaTolhK8YoqDgw3jafuYt4X1DfWMKgb/r5o=
+
+Name: META-INF/androidx.tracing_tracing-ktx.version
+SHA-256-Digest: DcruhcfzzXiNaoobVlHVYoZ2r8rfDYQM9ou3/nSen5E=
+
+Name: META-INF/androidx.tracing_tracing.version
+SHA-256-Digest: m5nVNs/LbonqguFThHKEaksaca6xCkHsPNz72IYNFTw=
+
+Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
+ n
+SHA-256-Digest: s/0pgtuKcRTX+BvAcqcODytXp6q48QathsOscGo3Zzg=
+
+Name: META-INF/androidx.work_work-runtime-ktx.version
+SHA-256-Digest: mEIGd3C6P49LPpORCg1CQ4i5mPeRpNYyFF7bKlw5LGI=
+
+Name: META-INF/androidx.work_work-runtime.version
+SHA-256-Digest: vUKjE/HxjuGdNcGxL8SQLbjFBLF0zaevJrWPAR+fz6g=
+
+Name: META-INF/androidx/annotation/annotation/LICENSE.txt
+SHA-256-Digest: fCwUOnvada90O9W8yg1bPrh6CE1zpeTOEtf8wrMzgWY=
+
+Name: META-INF/androidx/lifecycle/lifecycle-common/LICENSE.txt
+SHA-256-Digest: gZfpS/aX+zzaYitZOyHCn/5+emiNgicQmqIt4E5GdnM=
+
+Name: META-INF/androidx/room/room-common/LICENSE.txt
+SHA-256-Digest: sWa6puopMRSGklPnLS9PlE9SuPItPSTcKCV1Doe5O2Y=
+
+Name: META-INF/com/android/build/gradle/app-metadata.properties
+SHA-256-Digest: dDV59wLsIF0P8R9Ra7jqjC1LZrYhZr/3a0ID9VElUI0=
+
+Name: META-INF/kotlinx_coroutines_android.version
+SHA-256-Digest: N6fGY3MSzX8QNb7J0EXCYKRgjR4WHlrpAbicFAaKGpY=
+
+Name: META-INF/kotlinx_coroutines_core.version
+SHA-256-Digest: IsPzdASU7VjqJc+jCy0fImM87td6FsBar/UOcR3rgno=
+
+Name: META-INF/native-image/okhttp/okhttp/native-image.properties
+SHA-256-Digest: cgpKtTBHDDUt7bIW0msifpk/ziqvfC0M+a96j5vFhlw=
+
+Name: META-INF/services/s2.a
+SHA-256-Digest: 3vgIChN5y9agh3s+/+5EC3ItiLLzRFKytLXqa6R2EDI=
+
+Name: META-INF/services/s2.b
+SHA-256-Digest: R5yd4ysWKjCTVhQptDKcyiLsH5v+4wLt+BSl/Pvfy5g=
+
+Name: META-INF/version-control-info.textproto
+SHA-256-Digest: 2DfPChQSFns51fqq5hWXTlpfvppFG/5CCe4LaJhEl6E=
+
+Name: assets/PublicSuffixDatabase.list
+SHA-256-Digest: V1xrUpvgOCVq3G4N9vM8rRh2rVK68DzvYmi6nmYENcU=
+
+Name: assets/dexopt/baseline.prof
+SHA-256-Digest: lw9GqLfQUINQVxE8Ni+RoIygIYI0pAtVfmXV348Mn2Y=
+
+Name: assets/dexopt/baseline.profm
+SHA-256-Digest: Pg29rkTmak9VdSHYp/dXTM52F0+2iEYiMBJTFqD/ELs=
+
+Name: classes.dex
+SHA-256-Digest: wHTydlsbGxVGhg6BFZ30iB4beGxj049d1/wya3/IHJw=
+
+Name: kotlin-tooling-metadata.json
+SHA-256-Digest: gMqyHmmz14Q7V7PInl8cvBrWucq0MswOCwPh+TrQRFU=
+
+Name: kotlin/annotation/annotation.kotlin_builtins
+SHA-256-Digest: KXR0x2xbB2gHfXrgCKLdNYXEWvzUXH4fGQFju1xICCQ=
+
+Name: kotlin/collections/collections.kotlin_builtins
+SHA-256-Digest: E0H/9pasp01rGdLQlBzbHoRpxspiG9OwxpYkEp7Fvic=
+
+Name: kotlin/concurrent/atomics/atomics.kotlin_builtins
+SHA-256-Digest: hPrKy+4YvzglSXTmddgEKMCfxXTFBiFBuK1lTRSnuAY=
+
+Name: kotlin/coroutines/coroutines.kotlin_builtins
+SHA-256-Digest: tho5PtH7UK1vQ9qri7THrzURCUQF/U8b3qHAaNhe09w=
+
+Name: kotlin/internal/internal.kotlin_builtins
+SHA-256-Digest: nsaGddaoYZJlS2LdhZ6BQaV3SAcyovUuPyB0rtXHJQw=
+
+Name: kotlin/kotlin.kotlin_builtins
+SHA-256-Digest: 8lX73TSDPq1zEBnds6tDjrcIn2BO5KubY59PG1TSaVY=
+
+Name: kotlin/ranges/ranges.kotlin_builtins
+SHA-256-Digest: YPaLaKWXLx/WyTKoXHA1h+UJz3HMpGKwl+mbceIMw/8=
+
+Name: kotlin/reflect/reflect.kotlin_builtins
+SHA-256-Digest: HPoId7+Uzak5tLD1UcM1lXIcKI23M2EK3Vm7lOZOyFs=
+
+Name: lib/arm64-v8a/libpluginloader.so
+SHA-256-Digest: EhW2XF5sUX2Tr2lgWvvca0cSJnS+g/yFSQ33gOVFvd4=
+
+Name: lib/armeabi-v7a/libpluginloader.so
+SHA-256-Digest: CUCQ6N8TTkTQtUVUmT35ebl8y2cHVpUhEcwj4xz8lQU=
+
+Name: lib/x86/libpluginloader.so
+SHA-256-Digest: oPgLi8Y3yAvJfBBs7GDB9kFhAf7YdnJAg3/HfM8xX4Y=
+
+Name: lib/x86_64/libpluginloader.so
+SHA-256-Digest: s/mRTqUdhoCiEOsajz3Jv1XLgD7r3dbSyA7GLki/xpw=
+
+Name: res/MO.webp
+SHA-256-Digest: aB1I0HSnsiTWsrkfsC8SZ9PT2Fj7hOMwn3pwHijPKNM=
+
+Name: res/RD.xml
+SHA-256-Digest: gmvXl7Pm76WaxDIWZjrvzPXiZCMDKs8MK8y2v4UkqhI=
+
+Name: res/Sn.webp
+SHA-256-Digest: WP6dZuFh/vXKa8c+mqO8azAfqCcGzfZPa1Tl7eQDIwc=
+
+Name: res/d2.webp
+SHA-256-Digest: PeF48uq8+o6CeU5+0eopEF3A7nghPak9/B74QatNAcg=
+
+Name: res/fx.xml
+SHA-256-Digest: RmczGuef45eASkgLaE7/GZB62dY3LBPpAqrmdBWF/6E=
+
+Name: res/qs.webp
+SHA-256-Digest: 3w8mg5swsY18tEQinD90xueMC6QArFcOpUfb5MIRg7I=
+
+Name: res/sK.webp
+SHA-256-Digest: nwUlNp68R7RwfSwkGdxsEtNqvh8EQlTnHwnXh76UY2M=
+
+Name: res/tn.webp
+SHA-256-Digest: qE8mEPK3MXB1FCz50UEu66cNwKf3V1HGohatILde3dU=
+
+Name: resources.arsc
+SHA-256-Digest: eY7GQHADs2UqN9T+966WunpBqPQsXJ0P1zO8aHov2mo=
+

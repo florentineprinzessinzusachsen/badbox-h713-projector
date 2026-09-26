@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/accessibility_desc"
+    android:accessibilityEventTypes="typeAllMask"
+    android:packageNames="com.netflix.mediaclient"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:notificationTimeout="100"
+    android:accessibilityFlags="flagRequestFilterKeyEvents|flagReportViewIds"
+    android:canRetrieveWindowContent="true"
+    android:canRequestEnhancedWebAccessibility="true"
+    android:canRequestFilterKeyEvents="true"
+    android:canPerformGestures="true"/>

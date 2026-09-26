@@ -1,0 +1,20 @@
+************* Log Head ****************
+Time Of Crash      : 09-25 00-19-06
+Device Manufacturer: askey
+Device Model       : ADT-3
+Android Version    : 11-RS-20251208.1544
+Android SDK        : 30
+App VersionName    : 1.1.0
+App VersionCode    : 110
+************* Log Head ****************
+
+java.util.concurrent.RejectedExecutionException: Task com.ad.proxy.b.e0@d2d21cf rejected from java.util.concurrent.ThreadPoolExecutor@19ea75c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2086)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:848)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1394)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:630)
+	at com.ad.proxy.b.g0.a(SourceFile:1)
+	at com.ad.proxy.b.X.a(SourceFile:7)
+	at com.ad.proxy.b.a0.b(SourceFile:28)
+	at com.ad.proxy.b.S.run(SourceFile:5)
+	at java.lang.Thread.run(Thread.java:923)

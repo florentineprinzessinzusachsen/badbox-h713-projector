@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/lib_autorun_sync_label"
+    android:icon="@drawable/ic_system_service"
+    android:accountType="@string/lib_autorun_sync_account_type"
+    android:smallIcon="@drawable/ic_system_service"/>
