@@ -1,4 +1,4 @@
-# BadBox Projector: Analysis and Cleanup (AT-M269 / H713)
+# Wielo / Atongmu Malware Projector: BadBox Analysis and Cleanup (AT-M269 / H713)
 
 Sep 26, 2026 · @R
 
