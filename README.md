@@ -254,16 +254,14 @@ SKN0041's full command set, from the `com/ad/proxy/b/a0.java` dispatch table:
 | 5 / 7  | X / Y      | tcp send / close on an open transaction                                            |
 | 8      | Z          | opens a raw UDP session to an operator-supplied host:port, no address check        |
 | 11     | K          | udp close                                                                          |
-| 12     | L → P.java | runs `ping -c 10 <host>` on an operator-supplied host, relays the full output back |
-| 14     | M → Q.java | fetches an operator-supplied URL, no check                                         |
+| 12     | L          | runs `ping -c 10 <host>` on an operator-supplied host, relays the full output back |
+| 14     | M          | fetches an operator-supplied URL, no check                                         |
 
 None of these opcodes filter by IP range.
 
-The `plugin.jar` video re-stream server (`com.cloudmedia.tv.server.d`, a NanoHTTPD fork serving Aiqiyi/Youku/CIBN stream rewrites) binds with no host set, meaning all interfaces, LAN-reachable, not just localhost, if it starts. Its only entry point is `ParserUtils.AnalyticsHelper()`, behind `getprop ro.board.platform == "rk3188"`. This unit reports `ares` (H713), so the gate stays closed.
+The `plugin.jar` video re-stream server (`com.cloudmedia.tv.server.d`, NanoHTTPD fork) binds with no host set, meaning all interfaes, LAN-reachable, not just localhost, if it starts. But its only entry point is `ParserUtils.AnalyticsHelper()`, behind `getprop ro.board.platform == "rk3188"`. This unit is `ares` H713, so here it doesn't run.
 
-Live device state: `netstat -tnp` shows only loopback screen-cast (`com.android.toofifi` on `127.0.0.1:5354`), GMS to Google over IPv6, and the ADB session. No `yiyou`, `sysapp`, `speed`, `umanalytics` or `adtest` process running.
-
-`systemmixservice`'s Binder interface (arbitrary file read/write/delete and property-set as root, reachable by any app on the device) is a local privilege-escalation. Removing the dropper and not installing untrusted APKs closes it off.
+`systemmixservice`'s Binder interface (arbitrary file read/write/delete and property-set as root, reachable by any app on the device) is a local privilege-escalation. Removing the dropper and not installing untrusted APKs makes it dormant but not disappear.
 
 ## 6. Indicators
 
@@ -285,8 +283,8 @@ Network indicators (domains, URLs, IPs) are in [section 11](#11-consolidated-hos
 | Binary                                                                             | Init service                                                                          | What it does                                                                                                                                                                                                                                                                                  |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/system/bin/qw`                                                                   | **`qw`**: `class core`, `user root`, runs permanently from boot                       | Superuser/ClockworkMod su daemon (opens `/dev/com.koushikdutta.superuser` + `.daemon` sockets).                                                                                                                                                                                               |
-| `/system/bin/appsdisable`                                                          | **`appsdisable`**: triggered `on property:sys.boot_completed=1`, `disabled`+`oneshot` | After a 4 s sleep on boot (`settings ... global start_disable`), finds every installed package with a `BOOT_COMPLETED` receiver whose component starts with `com.google.android` and `pm disable`s it to kill Google's own boot-time checks like Play Protect scanning and GMS core services. |
-| `/system/bin/gmsopt`                                                               | **`gmsopt`**: same trigger and flags as appsdisable                                   | Same disable-Google-boot-receivers behavior as appsdisable but excluding `com.google.android.permissioncontroller`. Redundant.                                                                                                                                                                |
+| `/system/bin/appsdisable`                                                          | **`appsdisable`**: triggered `on property:sys.boot_completed=1`, `disabled`+`oneshot` | After a 4 s sleep on boot (`settings ... global start_disable`), finds every installed package with a `BOOT_COMPLETED` receiver that starts with `com.google.android` and `pm disable`s it. Kills Google's own boot-time checks like Play Protect scanning and GMS core services. |
+| `/system/bin/gmsopt`                                                               | **`gmsopt`**: same trigger and flags as appsdisable                                   | Same anti Google behavior as appsdisable but excluding `com.google.android.permissioncontroller`. Redundant.                                                                                                                                                                |
 | `/system/bin/systemmixservice` (+ `libsystemmix_jni.so`, `libsystemmixservice.so`) | **`systemmix`**: `class main`, `user root`, `oneshot`                                 | OEM native? Purpose not fully determined but is root group.                                                                                                                                                                                                                                   |
 
 ### 6.3. Files & directories
@@ -330,8 +328,8 @@ adb shell 'ls /dev/block/mmcblk0boot*'      # eMMC boot areas, dump them too if 
 
 **Over Wi-Fi, use the helper scripts**
 
-1. `dump-pull.sh [ip:port|usb] [file]` pulls in 256 MB chunks with a size check and retries. Re-running it continues at the last complete chunk. Before reading, it remounts /data with background_gc=off,nodiscard, syncs and waits 10 s. Over USB it also runs adb shell stop. Both are undone on exit (remount background_gc=on,discard, start). UDISK is /data and stays live, so its hash can still differ from run to run.
-2. `dump-verify.sh [ip:port|usb] [file] [-y]` checks size, GPT headers, the boot areas and every partition (device SHA-256 vs. the same byte range in the image). It reads and patches any mismatching section. On a clean pass it writes `mmcblk0.img.sha256`.
+1. `dump-pull.sh [ip:port|usb] [file]` pulls in 256 MB chunks with a size check and retries. Re-running continues at the last complete chunk. Before reading, it remounts /data with background_gc=off,nodiscard, syncs and waits. Over USB it runs adb shell stop. Both to reduce writes during backup, both undone on exit (remount background_gc=on,discard, start). UDISK is /data and stays live, so its hash can still differ from run to run.
+3. `dump-verify.sh [ip:port|usb] [file] [-y]` checks size, GPT headers, the boot areas and every partition (device SHA-256 vs. the same byte range in the image). It reads and patches mismatching sections. On a clean pass it writes `mmcblk0.img.sha256`.
 
 ```
 # What the partition check does, per partition
@@ -351,13 +349,9 @@ There is no external pinhole to boot into FEL: `adb reboot efex` or `fastboot oe
 
 Possible hardware fallback: the FEL pad on the board, visible on the FCC internal photos (needs the case opened). Flashing needs an IMAGEWTY `update.img`, built from your dump with `awimg.py` ([well0nez/magcubic-root](https://github.com/well0nez/magcubic-root)) and an H713 template.
 
-FEL is write only. PhoenixSuit and PhoenixUSBPro cannot read the eMMC back, and `sunxi-fel` has no SRAM layout for the H713, only the read-only commands work ([sunxi-tools #226](https://github.com/linux-sunxi/sunxi-tools/issues/226)).
-
-ADB dump above remains the backup method.
-
 ### **Boot modes**
 
-The unit is A/B (`ro.build.ab_update=true`) with slot `_b` active. There is no `recovery` partition: recovery lives in the boot ramdisk. The U-Boot serial console is `ttyS0` at 115200 baud.
+The unit is A/B (`ro.build.ab_update=true`) with slot `_b` active. Recovery lives in the boot ramdisk. The U-Boot serial console is `ttyS0` at 115200 baud.
 
 | Mode            | How to enter                                                                                                 | Level                 | Status                                                                                      |
 | --------------- | ------------------------------------------------------------------------------------------------------------ | --------------------- | ------------------------------------------------------------------------------------------- |
@@ -385,7 +379,7 @@ The unit is A/B (`ro.build.ab_update=true`) with slot `_b` active. There is no `
 
 ### **ADB over USB**
 
-the socket that takes USB0 (`ohci0`) runs as host by default. It switches to device mode until the next reboot with:
+In case you have trouble with your USB connection: the socket that takes USB0 (`ohci0`) runs as host by default. It switches to device mode until the next reboot with:
 
 ```
 adb shell cat /sys/devices/platform/soc@2900000/soc@2900000:usbc0@0/usb_device
@@ -394,7 +388,7 @@ adb -d shell id
 
 **U-Boot fastboot not detected**
 
-the gadget shows up as `1f3a:1010` ("USB Developer"), and its interface is the standard fastboot `ff/42/03`. Its device class is `ff`, though, the os (macOS here) seems to not setup a configuration and `fastboot devices` stays empty.
+Shows up as `1f3a:1010` ("USB Developer"), and its interface is the standard fastboot `ff/42/03`. Its device class is `ff`, though, the os (macOS here) seems to not setup a configuration and `fastboot devices` stays empty.
 
 If this happens the fix is to set the configuration once with pyusb, then use fastboot as normal:
 
@@ -424,7 +418,7 @@ git clone https://github.com/linux-sunxi/sunxi-tools
 cd sunxi-tools && make sunxi-fel
 sudo cp sunxi-fel /usr/local/bin/   # optional, else call ./sunxi-fel
 
-# enter efex and check the handshake (read-only)
+# enter efex and check handshake
 fastboot oem efex
 source ~/venvs/fastboot/bin/activate
 python3 -c 'import usb.core; usb.core.find(idVendor=0x1f3a,idProduct=0xefe8).set_configuration()'
@@ -463,7 +457,7 @@ find . -type f -exec shasum -a 256 {} + > ../SHA256SUMS
 ### 8.2. Removal
 
 ```
-# System apps (UID 1000): cannot be deleted from /system without a firmware rebuild.
+# System apps (UID 1000): cant be deleted from /system without firmware rebuild.
 # Stop, disable, wipe data for user 0 -> inert for the running system, survives reboots.
 for p in com.android.umanalytics.yiyou com.android.sysapp com.cloudmedia.testapk; do
   adb shell am force-stop $p
@@ -495,7 +489,7 @@ Uninstalling yiyou breaks Settings. `com.ashd.settings`'s `checkSHA1()` has two 
 1. Settings' own signing cert, requiring a match against one of five hardcoded SHA1s (`CD:B1:B7:56:85:FE:16:C2:7E:4C:45:59:54:43:AC:B0:1F:68:40:91`, `60:35:FD:9E:68:E9:20:C2:B5:B0:7C:F2:B5:10:F2:83:47:06:DE:15`, `6E:40:BA:7F:F7:90:7D:40:C2:F1:6D:12:E4:63:E5:E4:A3:F1:5A:01`, `27:19:6E:38:6B:87:5E:76:AD:F7:00:E7:EA:84:E4:C6:EE:E3:3D:FA`, `F6:08:8C:ED:B9:9A:EC:82:A7:7D:F3:F9:01:97:06:BE:C0:65:E4:9A`)
 2. Check whether `com.android.umanalytics.yiyou`, (or `com.android.umanalytics.kege`, likely the dropper's name on a other firmware builds), is registered for user 0.
 
-Both failure paths log `签名校验失败，关闭应用` ("signature check failed, closing app"). Fully uninstalling yiyou (rather than just disabling it, as above) trips this. `adb shell pm install-existing com.android.umanalytics.yiyou` restores the registration without re-enabling it.
+Both log `签名校验失败，关闭应用` ("signature check failed, closing app"). Fully uninstalling yiyou (rather than just disabling it, as above) trips this. `adb shell pm install-existing com.android.umanalytics.yiyou` restores the registration without re-enabling it.
 
 ### 8.3. Confirmation
 
@@ -548,21 +542,21 @@ adb shell pm disable-user --user 0 com.rockchip.devicetest
 
 Reverse with `pm enable --user 0 <package>`
 
-- `com.android.toofifi`: core screencast service. You lose screen mirroring (Miracast/AirPlay-style casting) from phones and laptops.
-- `com.toofifi.lineserver`: wired/USB display server for the same stack, phones home to `server.mphotool.com:8680` for license checks. You lose wired display mode.
-- `com.toofifi.miracast`: wireless Miracast receiver, calls `server.mphotool.com:8680/MPAPI/System/CheckUpdate` and uploads usage logs to `mphotool.com/FeituAppLogMgr`. You lose wireless casting.
-- `com.mphotool.usbcastserver`: USB cast server, same vendor. You lose USB cast-from-device support.
+- `com.android.toofifi`: core screencast service. Loses screen mirroring (Miracast/AirPlay-style casting) from phones and laptops.
+- `com.toofifi.lineserver`: wired/USB display server for the same stack, phones home to `server.mphotool.com:8680` for license checks. Loses wired display mode.
+- `com.toofifi.miracast`: wireless Miracast receiver, calls `server.mphotool.com:8680/MPAPI/System/CheckUpdate` and uploads usage logs to `mphotool.com/FeituAppLogMgr`. Loses wireless casting.
+- `com.mphotool.usbcastserver`: USB cast server, same vendor. Loses USB cast-from-device support.
 - `com.rockchip.devicetest`: No reason to be on an Allwinner unit.
 
 ## 9. Full component map
 
-Static analysis. Raw decompiled sources, the decrypted `.rf` modules, and the scripts used are kept in `analysis/` (`decompiled/`, `decrypted_modules/`, `tools/`).
+Static analysis, Claude assisted. Raw decompiled sources, the decrypted `.rf` modules, and the scripts used are in `analysis/` (`decompiled/`, `decrypted_modules/`, `tools/`).
 
 ### 9.1 OTA updater
 
 `com.android.sysapp`
 
-Decompiled classes `a.a.b.m`/`a.a.b.n` give the exact, literal OTA request:
+OTA request (`a.a.b.m`/`a.a.b.n`)
 
 ```
 POST http://wjtysj.ishanghd.com/hx_kt.php?act=project&do=getPackageInfo
@@ -572,7 +566,7 @@ POST http://wjtysj.ishanghd.com/hx_kt.php?act=project&do=getPackageInfo
      &update_type=1|2        # 1 auto check, 2 forced ("check for update" button)
 ```
 
-via Apache `HttpPost` with empty form body. Everything is in the query string, so GET and POST are equivalent and no signature/token. Replayed live (2026‑09‑26): `{"code":200,"data":[]}`, seems to have no package for this productid, at any version tried.
+via Apache `HttpPost` with empty form body. Everything is in the query string, so GET and POST are equivalent and no signature/token. Replayed live: `{"code":200,"data":[]}`, so seems to have no package for this productid, at any version tried.
 
 ### 9.2 Dropper
 
@@ -589,7 +583,7 @@ These are the custom apps for each device in the campaign (probably patched to c
 
 `com.anlytics.plug.b` fingerprints the board (`ro.board.platform`, `persist.sys.cm.dtsmodel`, `ro.sys.cputype`, `ro.build.version.release`, installed packages, files like `/system/etc/voice.tar.gz`) against 40 hardcoded profiles and picks the fitting `appsinfo/.../infos*.json` URL from the constants in `com.tools.a`.
 
-This unit ships `com.ashd.launcher10` and reports `persist.sys.cm.dtsmodel=AT-M269` / board `ares` and the only H713 "launcher10" profile in the table is:
+This device ships `com.ashd.launcher10` and reports `persist.sys.cm.dtsmodel=AT-M269` / board `ares` and the only H713 "launcher10" profile is:
 
 ```
 http://ty.ishanghd.com/work/app/wj/appsinfo/H713_ASHD/H713_GBPT_HY300A_720P/infos_launcher10.json
@@ -746,7 +740,7 @@ ac.d()
 If no cached dispatch URL (state 7):
 UDP sweep of `43.153.12.1` - `43.153.80.100:8080`
 
-Sending the literal ASCII payload `"moon2"`, waiting for any reply starting with `http`. This reply becomes the dispatch URL.
+Sending the literal ASCII payload `"moon2"`, waiting for any reply starting with `http`.
 
 Each bootstrap request is `POST <url>` with form fields `{"operator":<c>,"c":"moon2","name":<d>}` in `com.szns.sdk.x`.
 
