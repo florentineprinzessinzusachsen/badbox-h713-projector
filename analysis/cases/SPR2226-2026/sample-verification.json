@@ -1,0 +1,215 @@
+{
+  "checks_passed": 57,
+  "checks": [
+    "Exact sample hash: active.apk",
+    "Exact sample hash: systemmixservice",
+    "Exact sample hash: libsystemmixservice.so",
+    "Exact sample hash: libsystemmix_jni.so",
+    "Exact sample hash: qw",
+    "Exact sample hash: su",
+    "Both netservice DEX files inspected",
+    "No direct SystemMix method reference in either DEX (reflection not excluded)",
+    "Shared domain-provider URI present",
+    "Installer completion status and session identifiers present",
+    "Optional MD5 gate in download completion",
+    "Root-shell install helper instructions present",
+    "Autostart limit and explicit service-launch instructions present",
+    "Embedded hostname-obfuscation key found in sample",
+    "Independent fallback hostname decryption",
+    "Binder case 1 target",
+    "Binder case 1 virtual dispatch slot",
+    "Packed relocation resolves Binder case 1 to getProperty",
+    "Binder case 2 target",
+    "Binder case 2 virtual dispatch slot",
+    "Packed relocation resolves Binder case 2 to getFileData",
+    "Binder case 3 target",
+    "Binder case 3 virtual dispatch slot",
+    "Packed relocation resolves Binder case 3 to putFileData",
+    "Binder case 4 target",
+    "Binder case 4 virtual dispatch slot",
+    "Packed relocation resolves Binder case 4 to mountDev",
+    "Binder case 5 target",
+    "Binder case 5 virtual dispatch slot",
+    "Packed relocation resolves Binder case 5 to umountDev",
+    "Binder case 6 target",
+    "Binder case 6 virtual dispatch slot",
+    "Packed relocation resolves Binder case 6 to deleteFile",
+    "Binder case 7 target",
+    "Binder case 7 virtual dispatch slot",
+    "Packed relocation resolves Binder case 7 to canWrite",
+    "Binder case 8 target",
+    "Binder case 8 virtual dispatch slot",
+    "Packed relocation resolves Binder case 8 to renewName",
+    "Binder case 9 target",
+    "Binder case 9 virtual dispatch slot",
+    "Packed relocation resolves Binder case 9 to makeDir",
+    "Binder case 10 target",
+    "Binder case 10 virtual dispatch slot",
+    "Packed relocation resolves Binder case 10 to canRead",
+    "Binder case 11 target",
+    "Binder case 11 virtual dispatch slot",
+    "Packed relocation resolves Binder case 11 to setBootAnimation",
+    "Binder case 12 target",
+    "Binder case 12 virtual dispatch slot",
+    "Packed relocation resolves Binder case 12 to setBootLogo",
+    "Binder case 13 target",
+    "Binder case 13 virtual dispatch slot",
+    "Packed relocation resolves Binder case 13 to exportBootLogo",
+    "Special property-set vtable target",
+    "Special property-set transaction constant is 0x00ffffff",
+    "Twelve JNI registration entries decoded"
+  ],
+  "hashes": {
+    "active.apk": "33feb99dfca28f97aed5ef1cbcb1c9ebfe215fcb8c54c56cd79a7efcfac1e77f",
+    "systemmixservice": "08647d3268388e6f9a06233950f520a0e527f0bfb6079550918b94b94548d10d",
+    "libsystemmixservice.so": "91a204ab267f3e498c47670587adf00cf653609ef45054e6a4065e829adec759",
+    "libsystemmix_jni.so": "deec3320c4fc7ad86b64339413503442e376e1303e40d02788d9644ee36fb9c7",
+    "qw": "022b638767ddf981ba09b8092460ea4cb837a7cdf713949ecbea7c0a0ced5759",
+    "su": "398c9cb495d67e5721887f33b32b0dac31511ea1966c65347d0440474848b4e3"
+  },
+  "dex": [
+    {
+      "name": "classes.dex",
+      "bytes": 8279540,
+      "sha256": "0c9d9384d9ec1ec4f5d0840b0ef87e2de63843e302545706bde8d0a088c01be0"
+    },
+    {
+      "name": "classes2.dex",
+      "bytes": 1159440,
+      "sha256": "3901b28d2c4c81eaede04f95d75d4d3c96b11f690375253b87183b023fc8c34b"
+    }
+  ],
+  "fallbacks": [
+    "business.dnsyc.top",
+    "heartbeat.dnsyc.top"
+  ],
+  "binder": [
+    {
+      "transaction": 1,
+      "case_address": "0x4dc0",
+      "operation": "getProperty"
+    },
+    {
+      "transaction": 2,
+      "case_address": "0x4e52",
+      "operation": "getFileData"
+    },
+    {
+      "transaction": 3,
+      "case_address": "0x4eb4",
+      "operation": "putFileData"
+    },
+    {
+      "transaction": 4,
+      "case_address": "0x4f10",
+      "operation": "mountDev"
+    },
+    {
+      "transaction": 5,
+      "case_address": "0x4f58",
+      "operation": "umountDev"
+    },
+    {
+      "transaction": 6,
+      "case_address": "0x4f72",
+      "operation": "deleteFile"
+    },
+    {
+      "transaction": 7,
+      "case_address": "0x4f8c",
+      "operation": "canWrite"
+    },
+    {
+      "transaction": 8,
+      "case_address": "0x4fa6",
+      "operation": "renewName"
+    },
+    {
+      "transaction": 9,
+      "case_address": "0x4fce",
+      "operation": "makeDir"
+    },
+    {
+      "transaction": 10,
+      "case_address": "0x4fe6",
+      "operation": "canRead"
+    },
+    {
+      "transaction": 11,
+      "case_address": "0x4ffe",
+      "operation": "setBootAnimation"
+    },
+    {
+      "transaction": 12,
+      "case_address": "0x5016",
+      "operation": "setBootLogo"
+    },
+    {
+      "transaction": 13,
+      "case_address": "0x502e",
+      "operation": "exportBootLogo"
+    }
+  ],
+  "jni": [
+    {
+      "name": "nativeInit",
+      "signature": "()V",
+      "function": "0x1bb4"
+    },
+    {
+      "name": "nativeSetProperty",
+      "signature": "(Ljava/lang/String;Ljava/lang/String;)I",
+      "function": "0x1cc0"
+    },
+    {
+      "name": "nativeGetProperty",
+      "signature": "(Ljava/lang/String;)Ljava/lang/String;",
+      "function": "0x1d58"
+    },
+    {
+      "name": "nativeGetFileData",
+      "signature": "([BILjava/lang/String;)I",
+      "function": "0x1e04"
+    },
+    {
+      "name": "nativePutFileData",
+      "signature": "([BILjava/lang/String;)I",
+      "function": "0x1eec"
+    },
+    {
+      "name": "nativeMount",
+      "signature": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)I",
+      "function": "0x1fd4"
+    },
+    {
+      "name": "nativeUmount",
+      "signature": "(Ljava/lang/String;)I",
+      "function": "0x20c0"
+    },
+    {
+      "name": "nativeDelete",
+      "signature": "(Ljava/lang/String;)I",
+      "function": "0x2128"
+    },
+    {
+      "name": "nativeCanWrite",
+      "signature": "(Ljava/lang/String;)I",
+      "function": "0x2190"
+    },
+    {
+      "name": "nativeRename",
+      "signature": "(Ljava/lang/String;Ljava/lang/String;)I",
+      "function": "0x21f8"
+    },
+    {
+      "name": "nativeMkdir",
+      "signature": "(Ljava/lang/String;)I",
+      "function": "0x2290"
+    },
+    {
+      "name": "nativeCanRead",
+      "signature": "(Ljava/lang/String;)I",
+      "function": "0x22f8"
+    }
+  ]
+}
